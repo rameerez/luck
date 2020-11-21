@@ -1,6 +1,6 @@
 <html>
   <head>
-    <?php include('_head_imports.php') ?>
+    <?php include('./_head_imports.php') ?>
   </head>
 
   <body>
@@ -23,12 +23,12 @@
             <p>random person #<?php echo $subject_id + 1 ?>:</p>
             luck: <span id="subject-<?php echo $subject_id ?>-raw-luck"></span>/100
             <div class="progress">
-              <div id="subject-<?php echo $subject_id ?>-raw-luck-bar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="subject-<?php echo $subject_id ?>-raw-luck-bar" class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
             effort: <span id="subject-<?php echo $subject_id ?>-raw-effort"></span>/100
             <div class="progress">
-              <div id="subject-<?php echo $subject_id ?>-raw-effort-bar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="subject-<?php echo $subject_id ?>-raw-effort-bar" class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
             total score: <span id="subject-<?php echo $subject_id ?>-result-total-score"></span>/100
@@ -52,6 +52,6 @@
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <script src="/index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
