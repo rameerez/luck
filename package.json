@@ -1,0 +1,43 @@
+{
+  "name": "success-hard-work-vs-luck",
+  "version": "0.0.1",
+  "description": "Success is not only a matter of hard work: luck plays a crucial role.",
+  "private": true,
+  "dependencies": {
+    "jquery": "3.3.1"
+  },
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "build": "node utils/build.js",
+    "start": "node utils/webserver.js",
+    "webpack": "webpack"
+  },
+  "eslintConfig": {},
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "3.2.0",
+    "file-loader": "4.3.0",
+    "fs-extra": "8.1.0",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "string-replace-loader": "^2.3.0",
+    "style-loader": "1.0.0",
+    "terser-webpack-plugin": "^3.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
+    "webpack-concat-plugin": "^3.0.0",
+    "webpack-dev-server": "3.9.0",
+    "write-file-webpack-plugin": "4.5.1"
+  }
+}
