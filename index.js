@@ -1,53 +1,68 @@
-const luck_impact = 0.5
-const effort_impact = 0.5
+const luck_impact = 0.05
+const effort_impact = 0.95
 
-var gen_luck = 0
-var gen_effort = 0
-var totalScore = 0
+const n_subjects = 100
 
 var getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-var calculateTotalScore = (luck, effort) => {
+var generateNewSubjectData = () => {
+  luck = getRandomInt(100);
+  effort = getRandomInt(100);
+
   luck_component = (luck * luck_impact);
   effort_component = (effort * effort_impact);
 
   return {
+    raw_luck: luck,
+    raw_effort: effort,
     luck_component: luck_component,
     effort_component: effort_component,
     total: luck_component + effort_component
   }
 }
 
-var generateNewSubject = () => {
-  gen_luck = getRandomInt(100);
-  gen_effort = getRandomInt(100);
-  totalScore = calculateTotalScore(gen_luck, gen_effort);
+var generateAllSubjects = () => {
+  var subjects = []
+  for (i = 0; i < n_subjects; i++) {
+    subjects[i] = generateNewSubjectData()
+  }
+  return subjects;
 }
 
-var updateNewSubjectData = () => {
-  $("#luck-impact").text(luck_impact*100)
-  $("#effort-impact").text(effort_impact*100)
+var updateAllSubjects = () => {
+  subjectsInOrder = generateAllSubjects().sort(function(a, b) {
+    return a.total < b.total;
+  });
+
+  for (i = 0; i < n_subjects; i++) {
+    updateSubjectData(subjectsInOrder, i)
+  }
+}
+
+var updateSubjectData = (subjects, subjectIndex) => {
+  var subjectData = subjects[subjectIndex]
+
+  $("#subject-" + subjectIndex + "-raw-luck").text(subjectData.raw_luck)
+  $("#subject-" + subjectIndex + "-raw-effort").text(subjectData.raw_effort)
+
+  $("#subject-" + subjectIndex + "-raw-luck-bar").width(subjectData.raw_luck + "%").attr("aria-valuenow", subjectData.raw_luck)
+  $("#subject-" + subjectIndex + "-raw-effort-bar").width(subjectData.raw_effort + "%").attr("aria-valuenow", subjectData.raw_effort)
   
-  $("#generated-luck").text(gen_luck)
-  $("#generated-effort").text(gen_effort)
+  $("#subject-" + subjectIndex + "-result-total-score").text(Math.round(subjectData.total))
   
-  $("#generated-luck-bar").width(gen_luck + "%").attr("aria-valuenow", gen_luck)
-  $("#generated-effort-bar").width(gen_effort + "%").attr("aria-valuenow", gen_effort)
-  
-  $("#result-total-score-general").text(Math.round(totalScore["total"]))
-  
-  $("#result-effort-component-bar").width(totalScore["effort_component"] + "%").attr("aria-valuenow", totalScore["effort_component"])
-  $("#result-luck-component-bar").width(totalScore["luck_component"] + "%").attr("aria-valuenow", totalScore["luck_component"])
+  $("#subject-" + subjectIndex + "-result-effort-component-bar").width(subjectData.effort_component + "%").attr("aria-valuenow", subjectData.effort_component)
+  $("#subject-" + subjectIndex + "-result-luck-component-bar").width(subjectData.luck_component + "%").attr("aria-valuenow", subjectData.luck_component)
 }
 
 var onNewSubjectButtonClick = () => {
-  generateNewSubject()
-  updateNewSubjectData()
+  generateAllSubjects()
 }
 
 $( document ).ready(function() {
-  generateNewSubject()
-  updateNewSubjectData()
+  $("#luck-impact").text(luck_impact*100)
+  $("#effort-impact").text(effort_impact*100)
+
+  updateAllSubjects()
 });

@@ -18,24 +18,27 @@
       </div>
 
       <div class="row">
-        <div class="col">
-          <p>random person:</p>
-          luck: <span id="generated-luck"></span>/100
-          <div class="progress">
-            <div id="generated-luck-bar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+        <?php foreach (range(0, 99) as $subject_id) { ?>
+          <div class="col-2 mt-5">
+            <p>random person #<?php echo $subject_id + 1 ?>:</p>
+            luck: <span id="subject-<?php echo $subject_id ?>-raw-luck"></span>/100
+            <div class="progress">
+              <div id="subject-<?php echo $subject_id ?>-raw-luck-bar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
 
-          effort: <span id="generated-effort"></span>/100
-          <div class="progress">
-            <div id="generated-effort-bar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+            effort: <span id="subject-<?php echo $subject_id ?>-raw-effort"></span>/100
+            <div class="progress">
+              <div id="subject-<?php echo $subject_id ?>-raw-effort-bar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
 
-          total score: <span id="result-total-score-general"></span>/100
-          <div class="progress">
-            <div id="result-effort-component-bar" class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-            <div id="result-luck-component-bar" class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            total score: <span id="subject-<?php echo $subject_id ?>-result-total-score"></span>/100
+            <div class="progress">
+              <div id="subject-<?php echo $subject_id ?>-result-effort-component-bar" class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="subject-<?php echo $subject_id ?>-result-luck-component-bar" class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div>
-        </div>
+        <?php } ?>
+
       </div>
 
       <div class="row">
