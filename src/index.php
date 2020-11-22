@@ -22,10 +22,10 @@
     <section id="step-1" class="vertical-center">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-sm-12 col-md-6 offset-md-3">
             <div class="text-center">
-              <p>Explainatory text</p>
-              <a href="#step-2" type="button" class="btn btn-primary" onclick="">Next step</a>
+              <p>Entrepreneurs, athletes, artists, politicians, astronauts... there's one thing they all have in common: success. Most will say this is just the product of hard work and dedication: <b>but is it really?</b></p>
+              <a href="#step-2" type="button" class="btn btn-primary" onclick="">Let's find out</a>
             </div>
           </div>
         </div>
@@ -35,23 +35,24 @@
     <section id="step-2" class="vertical-center">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-sm-12 col-md-8 offset-md-2">
             <div class="text-center">
-              <p>Let's take only one person as an example. This will be you.</p>
-              <p>Your total success will be calculated as <span id="effort-impact"></span>% hard work and <span id="luck-impact"></span>% luck.</p>
+              <p>Let's take one random person as an example. <b>This will be you</b>.</p>
+              <p>You will be represented by a random <b>🏋️ hard work score</b> and a random <b>🍀 luck score</b>. Your total success will be calculated as <span id="effort-impact"></span>% hard work and <span id="luck-impact"></span>% luck.</p>
+              <a href="#step-3" type="button" class="btn btn-primary" onclick="">Generate your random self</a>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row d-none">
           <div class="col-sm-12 col-md-2 offset-md-5">
             <?php include('./_subject_box.php') ?>
           </div>
           <div class="col-12 text-center">
-            <p>Play with the.. until you're ready to move on.</a>
-            <p><a>Generate new data</a></p>
+            <p><a>Re-generate your random self</a></p>
+            <p>As you can see, random... play with the.. until you're happy and ready to move on.</a>
           </div>
         </div>
-        <div class="row">
+        <div class="row d-none">
           <div class="col text-center">
             <a href="#step-3" type="button" class="btn btn-primary" onclick="">Next step</a>
           </div>
@@ -64,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <p>If we now do this over 100 subjects...</p>
+            <p>If we now generate 100 more people...</p>
           </div>
         </div>
         <div class="row">
@@ -256,7 +257,7 @@
             <p>The only thing you can do to maximize success is by maximizing opportunities, and you only can do that by getting out there and making your voice heard.</p>
             <p>So go ahead and share this to prove you're more intelligent.</p>
             
-            <p>Buy me a coffee.</p>
+            <p>Buy me a coffee. / patreon?</p>
             <p>Check out my products</p>
             <input type="email" placeholder="newsletter" />
             <br />
