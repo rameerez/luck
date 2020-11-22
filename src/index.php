@@ -10,7 +10,7 @@
         <div class="row">
           <div class="col">
             <div class="text-center">
-              <h1><span class="success">Success</span><div class="success-subtitle">is it really hard work or just luck?</div></h1>
+              <h1><span class="success">Success</span><div class="success-subtitle">is it really hard work – or just luck?</div></h1>
               <a href="#step-1" type="button" class="btn btn-primary mt-3" onclick="">Play game</a>
             </div>
           </div>
@@ -24,7 +24,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 offset-md-3">
             <div class="text-center">
-              <p>Entrepreneurs, athletes, artists, politicians, astronauts... there's one thing they all have in common: success. Most will say this is just the product of hard work and dedication: <b>but is it really?</b></p>
+              <p>Entrepreneurs, athletes, artists, politicians, astronauts... there's one thing they all have in common: success. Most will say this is just the product of skill, hard work and dedication: <b>but is it really?</b></p>
               <a href="#step-2" type="button" class="btn btn-primary" onclick="">Let's find out</a>
             </div>
           </div>
@@ -38,14 +38,16 @@
           <div class="col-sm-12 col-md-8 offset-md-2">
             <div class="text-center">
               <p>Let's take one random person as an example. <b>This will be you</b>.</p>
-              <p>You will be represented by a random <b>🏋️ hard work score</b> and a random <b>🍀 luck score</b>. Your total success will be calculated as <span id="effort-impact"></span>% hard work and <span id="luck-impact"></span>% luck.</p>
-              <a href="#step-3" type="button" class="btn btn-primary" onclick="">Generate your random self</a>
+              <p>You will be represented by a random <b>🏋️ hard work score</b> (skill) and a random <b>🍀 luck score</b>. Your <b>🏆 total success</b> will be calculated as <span id="effort-impact"></span>% hard work and <span id="luck-impact"></span>% luck.</p>
+              <a href="#step-3" type="button" class="btn btn-primary" onclick="generateRandomSelf()">Generate your random self</a>
             </div>
           </div>
         </div>
-        <div class="row d-none">
+        <div class="row" id="random-self-row">
           <div class="col-sm-12 col-md-2 offset-md-5">
-            <?php include('./_subject_box.php') ?>
+            <div id="random-self">
+              <?php include('./_subject_box.php') ?>
+            </div>
           </div>
           <div class="col-12 text-center">
             <p><a>Re-generate your random self</a></p>
@@ -141,6 +143,7 @@
           <div class="col">
             <div class="text-center">
               <p>Top candidates consistently have a good deal of luck, even though it only accounts for 5% of the...</p>
+              <p>Another interesting conclusion is that no one reaches the top by luck alone: working as hard as you can is just a pre-requisite.</p>
               <p>A question may arise: what if we removed luck?</p>
               <a href="#step-2" type="button" class="btn btn-primary" onclick="">Discover what happens if we remove luck</a>
             </div>
@@ -210,7 +213,7 @@
             <div class="text-center">
               <p>Does it get better with time? Well the answer is no. While there's not much we can do, we can argue if luck really accounts for 5% of the total success – or is it more...?</p>
               <p>Todo graph</p>
-              <p>Also there's more - probably also health, family, country, environment.</p>
+              <p>Also there's more - probably also health, family, country, environment. And the worst thing is, successful people aren't even aware of their survivorship bias.</p>
               <a href="#step-2" type="button" class="btn btn-primary" onclick="">Is luck really just 5%?</a>
             </div>
           </div>
@@ -271,6 +274,7 @@
     <?php #include('_made_by.php') ?>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="./js/navigation.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
