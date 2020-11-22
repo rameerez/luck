@@ -7,8 +7,8 @@
   <div class="row mb-4">
     <div class="col text-right subject-info">
       <span style="font-size: 14px;">🧑</span>
-      <div id="subject-<?php echo $subject_id ?>-name" class="<?php echo $subject_id == 0 ? "" : "d-none" ?>">You</div>
-      <div>subject #<?php echo $subject_id + 1 ?></div>
+      <div id="subject-<?php echo $subject_id ?>-name" class="<?php echo $subject_id == 0 ? "" : "d-none" ?>"><b>You</b></div>
+      <div><span class="subject">subject</span> #<?php echo $subject_id + 1 ?></div>
     </div>
   </div>
 
@@ -18,10 +18,10 @@
 
     <div class="row">
       <div class="col">
-        🍀 Luck 
+        🍀 <span class="luck">Luck</span>
       </div>
       <div class="col text-right">
-        <span id="subject-<?php echo $subject_id ?>-raw-luck"></span>/100
+        <span id="subject-<?php echo $subject_id ?>-raw-luck"></span><span class="of-100">/100</span>
       </div>
     </div>
 
@@ -35,10 +35,10 @@
     
     <div class="row">
       <div class="col">
-        🏋️ Skill 
+        🏋️ <span class="skill">Skill</span>
       </div>
       <div class="col text-right">
-        <span id="subject-<?php echo $subject_id ?>-raw-effort"></span>/100
+        <span id="subject-<?php echo $subject_id ?>-raw-effort"></span><span class="of-100">/100</span>
       </div>
     </div>
 
@@ -51,10 +51,10 @@
 
     <div class="row">
       <div class="col">
-        🏆 Tot.</span>
+        🏆 <span class="total">Tot.</span>
       </div>
       <div class="col text-right">
-        <span id="subject-<?php echo $subject_id ?>-result-total-score"></span>/100
+        <span id="subject-<?php echo $subject_id ?>-result-total-score"></span><span class="of-100">/100</span>
       </div>
     </div>
     

@@ -42,6 +42,14 @@ h1 .success-subtitle {
   font-size: 8px;
 }
 
+.tiny-subject-box .subject,
+.tiny-subject-box .luck,
+.tiny-subject-box .skill,
+.tiny-subject-box .of-100,
+.tiny-subject-box .total {
+  display: none;
+}
+
 .key-metric {
   text-transform: uppercase;
   font-size: 14px;

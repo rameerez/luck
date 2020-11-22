@@ -61,6 +61,9 @@ var onNewSubjectButtonClick = () => {
 }
 
 $( document ).ready(function() {
+  initSteps();
+  initNextButtons();
+
   $("#luck-impact").text(luck_impact*100)
   $("#effort-impact").text(effort_impact*100)
 
