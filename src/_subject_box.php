@@ -1,7 +1,18 @@
-<?php if (!isset($subject_id)) { $subject_id = -10; } ?>
+<?php 
+  if (!isset($subject_id)) { $subject_id = 0; }
+?>
 
 <div class="subject-box">
-  <p class="d-none">sub #<?php echo $subject_id + 1 ?>:</p>
+
+  <div class="row mb-4">
+    <div class="col text-right subject-info">
+      <span style="font-size: 14px;">🧑</span>
+      <div id="subject-<?php echo $subject_id ?>-name" class="<?php echo $subject_id == 0 ? "" : "d-none" ?>">You</div>
+      <div>subject #<?php echo $subject_id + 1 ?></div>
+    </div>
+  </div>
+
+  <p class="d-none">:</p>
 
   <div class="luck-bar-wrapper mt-2">
 

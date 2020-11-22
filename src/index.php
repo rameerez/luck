@@ -49,14 +49,14 @@
               <?php include('./_subject_box.php') ?>
             </div>
           </div>
-          <div class="col-12 text-center">
-            <p><a>Re-generate your random self</a></p>
-            <p>As you can see, random... play with the.. until you're happy and ready to move on.</a>
+          <div class="col-sm-12 col-md-8 offset-md-2 text-center">
+            <p><a onclick="generateRandomSelf()">Re-generate your random self</a></p>
+            <p>Play with the random generator until you're happy and ready to move on.</a>
           </div>
         </div>
-        <div class="row d-none">
+        <div class="row">
           <div class="col text-center">
-            <a href="#step-3" type="button" class="btn btn-primary" onclick="">Next step</a>
+            <a href="#step-3" type="button" class="btn btn-primary" onclick="">Meet the rest</a>
           </div>
         </div>
       </div>
@@ -66,13 +66,22 @@
     <section id="step-3" class="vertical-center">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center">
-            <p>If we now generate 100 more people...</p>
+          <div class="col-sm-12 col-md-8 offset-md-2 text-center">
+            <p>But you're not alone in the world, aren't you? These are <b>100 more random people</b>, representing the rest of the population – and the people you have to compete with. They have been randomly generated, just like you.</p>
           </div>
         </div>
-        <div class="row">
-          <?php foreach (range(0, 11) as $subject_id) { ?>
-            <div class="col-sm-6 col-md-2 mt-5">
+
+        <div id="first-12-candidates" class="row">
+          <?php foreach (range(1, 12) as $subject_id) { ?>
+            <div class="col-6 col-md-2 mt-5">
+              <?php include('./_subject_box.php') ?>
+            </div>
+          <?php } ?>
+        </div>
+
+        <div id="remaining-candidates" class="row d-none">
+          <?php foreach (range(13, 100) as $subject_id) { ?>
+            <div class="col-6 col-md-2 mt-5">
               <?php include('./_subject_box.php') ?>
             </div>
           <?php } ?>
@@ -80,8 +89,8 @@
 
         <div class="row">
           <div class="col text-center">
-            <p>Generate new 100 subjects</p>
-            <p>You get the idea</p>
+            <p><a onclick="showAllSubjects()">See all 100</a></p>
+            <p><a>Generate new 100 subjects</a></p>
             <a href="#step-3" type="button" class="btn btn-primary" onclick="">Next step</a>
           </div>
         </div>
@@ -91,11 +100,9 @@
     <section id="step-4" class="vertical-center">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <div class="text-center">
-              <p>That seemed pretty random, but... can we see a pattern? What if we sort and ... just the top 10. Explainatory text</p>
-              <a href="#step-2" type="button" class="btn btn-primary" onclick="">Sort and reveal top 10 candidates</a>
-            </div>
+          <div class="col-sm-12 col-md-8 offset-md-2 text-center">
+            <p>Okay, your peers seem pretty random, but... is there any pattern we can see? What if we sort all people by <b>🏆 total success</b> and look just at the top 10 performers?</p>
+            <a href="#step-2" type="button" class="btn btn-primary" onclick="">Sort and reveal the top 10 people</a>
           </div>
         </div>
       </div>
@@ -105,21 +112,26 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2>The top 10 candidates</h2>
-            <p>These are... the top 10 candidates. can you see the partern?</p>
+            <h2>The top 10 performers</h2>
+            <p>These are the top 10 performers. Do you see <b>the partern</b> among them? <a onclick="revealPattern()">Reveal the pattern</a></p>
           </div>
         </div>
-        <div class="row">
+
+        <div id="hidden-pattern" class="row my-3 d-none">
           <div class="col-4 text-center">
-            <p>99.7% <br />Average effort</p>
+            <p class="key-metric"><span class="big-figure">99.7%</span> <br />Average effort</p>
           </div>
           <div class="col-4 text-center">
-            <p>99.7% <br />Average luck</p>
+            <p class="key-metric important-metric"><span class="big-figure">99.7%</span> <br />Average luck</p>
           </div>
           <div class="col-4 text-center">
-            <p>99.7% <br />Average success</p>
+            <p class="key-metric"><span class="big-figure">99.7%</span> <br />Average success</p>
+          </div>
+          <div class="col-12 text-center">
+            <p>Most people in the top 10 are extremely lucky.</p>
           </div>
         </div>
+
         <div class="row">
           <?php foreach (range(0, 9) as $subject_id) { ?>
             <div class="col my-5">
@@ -140,11 +152,11 @@
     <section id="step-4" class="vertical-center">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-sm-12 col-md-6 offset-md-3 text-center">
             <div class="text-center">
-              <p>Top candidates consistently have a good deal of luck, even though it only accounts for 5% of the...</p>
-              <p>Another interesting conclusion is that no one reaches the top by luck alone: working as hard as you can is just a pre-requisite.</p>
-              <p>A question may arise: what if we removed luck?</p>
+              <p>Top candidates have a <b>very consistent good deal of luck</b>, even though luck only accounts for 5% of the overall success.</p>
+              <p>Another interesting point is that <b>no one reaches the top by luck alone</b>: working hard is just a pre-requisite. Luck just stacks on top of hard work.</p>
+              <p>Is this fair? What if we removed luck?</p>
               <a href="#step-2" type="button" class="btn btn-primary" onclick="">Discover what happens if we remove luck</a>
             </div>
           </div>
@@ -157,8 +169,8 @@
 
         <div class="row">
           <div class="col-12 text-center">
-            <h2>The top 10 candidates – if luck was not a factor</h2>
-            <p>These are what the top 10 candidates would be if luck was not a considered.</p>
+            <h2>The top 10 performers – if luck was not a factor</h2>
+            <p>Imagine a world where luck was not even a concept and success was entirely determined by hard work alone. These would be the top 10 performers if luck was not considered.</p>
           </div>
         </div>
         <div class="row">

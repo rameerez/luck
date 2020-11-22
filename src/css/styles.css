@@ -3,6 +3,11 @@
   align-items: center;
 }
 
+a:not([href]) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 section {
   min-height: 100vh;
 }
@@ -31,4 +36,24 @@ h1 .success-subtitle {
   border-radius: 12px;
   box-shadow: 0px 0px 10px #d9d9d9;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.subject-box .subject-info {
+  font-size: 8px;
+}
+
+.key-metric {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.key-metric.important-metric {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.key-metric .big-figure {
+  font-size: 32px;
+  font-weight: bold;
 }
