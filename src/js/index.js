@@ -5,6 +5,7 @@ const face_emojis = ["🧑", "👱", "👨", "🧔", "👨‍🦰", "👨‍🦱
 const n_subjects = 100
 
 var subjects = []
+var sortedSubjects = []
 
 var getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
@@ -38,20 +39,32 @@ var generateNewSubjectData = () => {
 }
 
 var generateAllSubjects = () => {
-  for (i = 0; i < n_subjects; i++) {
+  for (i = 1; i < n_subjects; i++) {
     subjects[i] = generateNewSubjectData()
   }
   return subjects;
 }
 
-var updateAllSubjects = () => {
-  subjectsInOrder = generateAllSubjects().sort(function(a, b) {
+var updateAllSubjectsInArray = arr => {
+  for (i = 0; i < arr.length-1; i++) {
+    updateSubjectData(arr, i)
+  }
+}
+
+var generateRandomSubjects = () => {
+  generateAllSubjects();
+  updateAllSubjectsInArray(subjects);
+}
+
+var sortSubjectsBySuccess = () => {
+  return subjects.sort(function(a, b) {
     return a.total < b.total;
   });
+}
 
-  for (i = 0; i < n_subjects; i++) {
-    updateSubjectData(subjectsInOrder, i)
-  }
+var sortAndUpdateSubjects = () => {
+  var sortedSubjects = sortSubjectsBySuccess();
+  updateAllSubjectsInArray(sortedSubjects);
 }
 
 var updateSubjectData = (subjects, subjectIndex) => {

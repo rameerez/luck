@@ -55,7 +55,7 @@
           </div>
 
           <div class="col-12 text-center">
-            <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Meet the rest</a>
+            <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="generateRandomSubjects();">Meet the rest</a>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
         </div>
 
         <div id="remaining-candidates" class="row d-none">
-          <?php foreach (range(7, 100) as $subject_id) { ?>
+          <?php foreach (range(7, 99) as $subject_id) { ?>
             <div class="col-6 col-md-2 mt-5">
               <?php include('./_subject_box.php') ?>
             </div>
@@ -89,7 +89,7 @@
         <div class="row">
           <div class="col text-center">
             <p><a onclick="showAllSubjects()">See all 100</a></p>
-            <p><a>Generate new 100 subjects</a></p>
+            <p><a onclick="generateRandomSubjects();">Generate new 100 subjects</a></p>
             <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Next step</a>
           </div>
         </div>
