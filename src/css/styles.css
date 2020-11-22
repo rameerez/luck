@@ -6,3 +6,17 @@
 section {
   min-height: 100vh;
 }
+
+h1 {
+  text-transform: uppercase;
+}
+
+h1 .success {
+  font-size: 52px;
+  font-weight: bolder;
+}
+
+h1 .success-subtitle {
+  font-size: 22px;
+  font-weight: lighter;
+}

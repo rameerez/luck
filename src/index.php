@@ -4,18 +4,14 @@
   </head>
 
   <body>
-    <!-- <div class="col">
-      <label for="customRange1">Example range</label>
-      <input type="range" class="custom-range" id="customRange1">
-    </div> -->
 
     <section id="step-0" class="vertical-center">
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="text-center">
-              <h1>Success<div class="">is it really hard work or just luck?</div></h1>
-              <a href="#step-1" type="button" class="btn btn-primary" onclick="">Play game</a>
+              <h1><span class="success">Success</span><div class="success-subtitle">is it really hard work or just luck?</div></h1>
+              <a href="#step-1" type="button" class="btn btn-primary mt-3" onclick="">Play game</a>
             </div>
           </div>
         </div>
@@ -41,8 +37,8 @@
         <div class="row">
           <div class="col">
             <div class="text-center">
-              <p>Let's take only one subject as an example.</p>
-              <p>Their total success is calculated as <span id="effort-impact"></span>% hard work and <span id="luck-impact"></span>% luck.</p>
+              <p>Let's take only one person as an example. This will be you.</p>
+              <p>Your total success will be calculated as <span id="effort-impact"></span>% hard work and <span id="luck-impact"></span>% luck.</p>
             </div>
           </div>
         </div>
@@ -211,15 +207,68 @@
         <div class="row">
           <div class="col">
             <div class="text-center">
-              <p>While there's not much we can do, we can argue if luck really accounts for 5% of the total success – or is it more?</p>
+              <p>Does it get better with time? Well the answer is no. While there's not much we can do, we can argue if luck really accounts for 5% of the total success – or is it more...?</p>
               <p>Todo graph</p>
-              <a href="#step-2" type="button" class="btn btn-primary" onclick="">Is there anything we can do?</a>
+              <p>Also there's more - probably also health, family, country, environment.</p>
+              <a href="#step-2" type="button" class="btn btn-primary" onclick="">Is luck really just 5%?</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="step-4" class="vertical-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="text-center">
+              <p>Does luck really accounts for 5% of the total success – or is it more...?</p>
+              <label for="customRange1">Example range</label>
+              <input type="range" class="custom-range" id="customRange1">
+
+              <a href="#step-2" type="button" class="btn btn-primary" onclick="">Re-play with a 20% luck</a>
+              <a href="#step-2" type="button" class="btn btn-primary" onclick="">How would you compare to the others?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="step-4" class="vertical-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>You would have scored 231/1000 (top 50%)</h2>
+          </div>
+
+          <div class="col-sm-12 text-center">
+            <div class="row">
+              <div class="col offset-md-4">
+                <div class="row">
+                  <?php foreach (range(0, 2) as $subject_id) { ?>
+                    <div class="col-sm-12 col-md-2 my-5">
+                      <?php include('./_subject_box.php') ?>
+                    </div>
+                  <?php } ?>
+                </div>
+              </div>
+            </div>
+            <p>The only thing you can do to maximize success is by maximizing opportunities, and you only can do that by getting out there and making your voice heard.</p>
+            <p>So go ahead and share this to prove you're more intelligent.</p>
+            
+            <p>Buy me a coffee.</p>
+            <p>Check out my products</p>
+            <input type="email" placeholder="newsletter" />
+            <br />
+            <a href="#step-2" type="button" class="btn btn-primary" onclick="">share here there TW FB IG LN etc</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <?php #include('_made_by.php') ?>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
   </body>
