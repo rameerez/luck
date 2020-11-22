@@ -46,7 +46,7 @@
         <div class="row d-none" id="random-self-row">
           <div class="col-sm-12 col-md-2 offset-md-5">
             <div id="random-self">
-              <?php include('./_subject_box.php') ?>
+              <?php $subject_type = "random"; include('./_subject_box.php') ?>
             </div>
           </div>
           <div class="col-sm-12 col-md-8 offset-md-2 text-center">
@@ -73,7 +73,7 @@
         <div id="first-12-candidates" class="row">
           <?php foreach (range(1, 6) as $subject_id) { ?>
             <div class="col-6 col-md-2 mt-5">
-              <?php include('./_subject_box.php') ?>
+              <?php $subject_type = "random"; include('./_subject_box.php') ?>
             </div>
           <?php } ?>
         </div>
@@ -81,7 +81,7 @@
         <div id="remaining-candidates" class="row d-none">
           <?php foreach (range(7, 99) as $subject_id) { ?>
             <div class="col-6 col-md-2 mt-5">
-              <?php include('./_subject_box.php') ?>
+              <?php $subject_type = "random"; include('./_subject_box.php') ?>
             </div>
           <?php } ?>
         </div>
@@ -101,7 +101,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-8 offset-md-2 text-center">
             <p>Okay, your peers seem pretty random, but... is there any pattern we can see? What if we sort all people by <b>🏆 total success</b> and look just at the top 10 performers?</p>
-            <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Sort and reveal the top 10 people</a>
+            <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="sortAndUpdateSubjects()">Sort and reveal the top 10 people</a>
           </div>
         </div>
       </div>
@@ -112,29 +112,29 @@
         <div class="row">
           <div class="col-12 text-center">
             <h2>The top 10 performers</h2>
-            <p>These are the top 10 performers. Do you see <b>the partern</b> among them? <a onclick="revealPattern()">Reveal the pattern</a></p>
+            <p>These are the top 10 performers. Do you see <b>the pattern</b> among them? <a onclick="updateTopMetrics(); revealPattern(); ">Reveal the pattern</a></p>
           </div>
         </div>
 
         <div id="hidden-pattern" class="row my-3 d-none">
           <div class="col-4 text-center">
-            <p class="key-metric"><span class="big-figure">99.7%</span> <br />Average effort</p>
+            <p class="key-metric"><span class="big-figure"><span id="average-effort">0</span>%</span> <br />Average effort</p>
           </div>
           <div class="col-4 text-center">
-            <p class="key-metric important-metric"><span class="big-figure">99.7%</span> <br />Average luck</p>
+            <p class="key-metric important-metric"><span class="big-figure"><span id="average-luck">0</span>%</span> <br />Average luck</p>
           </div>
           <div class="col-4 text-center">
-            <p class="key-metric"><span class="big-figure">99.7%</span> <br />Average success</p>
+            <p class="key-metric"><span class="big-figure"><span id="average-success">0</span>%</span> <br />Average success</p>
           </div>
           <div class="col-12 text-center">
-            <p>Most people in the top 10 are extremely lucky.</p>
+            <p>Most people in the top 10 are luckier than average.</p>
           </div>
         </div>
 
         <div class="row">
           <?php foreach (range(0, 9) as $subject_id) { ?>
             <div class="col my-5 tiny-subject-box">
-              <?php include('./_subject_box.php') ?>
+              <?php $subject_type = "sorted"; include('./_subject_box.php'); ?>
             </div>
           <?php } ?>
         </div>
@@ -156,7 +156,7 @@
               <p>Top candidates have a <b>very consistent good deal of luck</b>, even though luck only accounts for 5% of the overall success.</p>
               <p>Another interesting point is that <b>no one reaches the top by luck alone</b>: working hard is just a pre-requisite. Luck just stacks on top of hard work.</p>
               <p>Is this fair? What if we removed luck?</p>
-              <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Discover what happens if we remove luck</a>
+              <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="onRemoveLuck()">Discover what happens if we remove luck</a>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@
         <div class="row">
           <?php foreach (range(0, 9) as $subject_id) { ?>
             <div class="col my-5 tiny-subject-box">
-              <?php include('./_subject_box.php') ?>
+              <?php $subject_type = "noluck"; include('./_subject_box.php') ?>
             </div>
           <?php } ?>
         </div>
@@ -188,22 +188,23 @@
         <div class="row">
           <?php foreach (range(0, 9) as $subject_id) { ?>
             <div class="col my-5 tiny-subject-box">
-              <?php include('./_subject_box.php') ?>
+              <?php $subject_type = "sorted-2"; include('./_subject_box.php') ?>
             </div>
           <?php } ?>
         </div>
 
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3 text-center">
-            <p>8 out of 10 of them are different people. Only 2 remain the same.</p>
-            <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">But the world is big enough...</a>
+            <p><span id="number-of-same-subjects">0</span> out of 10 of them are different people. Only <span id="number-of-different-subjects">0</span> remain the same.</p>
+            <!-- <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">But the world is big enough...</a> -->
+            <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Is there anything we can do?</a>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section id="step-" class="vertical-center">
+    <!-- <section id="step-" class="vertical-center">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3">
@@ -215,14 +216,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="step-" class="vertical-center">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3">
             <div class="text-center">
-              <p>While there's not much we can do to compensate this effect, this experiment draws two key conclusions:</p>
+              <p>While there's not much we can do to compensate this effect, this experiment allows to draw two key conclusions:</p>
 
               <ol class="my-5">
                 <li>You need to <b>work at 100%</b> of your abilities to even stand a chance.</li>
