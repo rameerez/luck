@@ -2,7 +2,7 @@ const luck_impact = 0.05
 const effort_impact = 0.95
 const face_emojis = ["🧑", "👱", "👨", "🧔", "👨‍🦰", "👨‍🦱", "👨‍🦳", "👨‍🦲", "👩", "👩‍🦰", "🧑‍🦰", "👩‍🦱", "🧑‍🦱", "👩‍🦳", "🧑‍🦳", "👩‍🦲", "🧑‍🦲", "👱‍♀️", "👱‍♂️", "🧓", "👴", "👵"]
 
-const n_subjects = 100
+const n_subjects = 1000
 
 var subjects = []
 var sortedSubjects = []
@@ -40,6 +40,7 @@ var generateNewSubjectData = () => {
 }
 
 var generateAllSubjects = () => {
+  subjects.splice(1); // Removes all elements but the first one (current player)
   for (i = 1; i < n_subjects; i++) {
     subjects[i] = generateNewSubjectData()
   }
@@ -143,6 +144,7 @@ $( document ).ready(function() {
 
   $("#luck-impact").text(luck_impact*100)
   $("#effort-impact").text(effort_impact*100)
+  $(".number-of-people-in-simulation").text(n_subjects)
 
   // updateAllSubjects()
 });

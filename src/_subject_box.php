@@ -15,7 +15,7 @@
 
   <p class="d-none">:</p>
 
-  <div class="luck-bar-wrapper mt-2">
+  <div class="luck-bar-wrapper mt-2 <?php echo $subject_type=="noluck" ? "d-none" : "" ?>">
 
     <div class="row">
       <div class="col">

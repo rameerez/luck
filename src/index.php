@@ -66,7 +66,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-8 offset-md-2 text-center">
-            <p>But you're not alone in the world, aren't you? These are <b>100 more random people</b>, representing the rest of the population – and the people you have to compete with. They have been randomly generated, just like you.</p>
+            <p>But you're not alone in the world, aren't you? These are <b><span class="number-of-people-in-simulation">0</span> more random people</b>, representing the rest of the population – and the people you have to compete with. They have been randomly generated, just like you.</p>
           </div>
         </div>
 
@@ -79,7 +79,7 @@
         </div>
 
         <div id="remaining-candidates" class="row d-none">
-          <?php foreach (range(7, 99) as $subject_id) { ?>
+          <?php foreach (range(7, 30) as $subject_id) { ?>
             <div class="col-6 col-md-2 mt-5">
               <?php $subject_type = "random"; include('./_subject_box.php') ?>
             </div>
@@ -88,8 +88,8 @@
 
         <div class="row">
           <div class="col text-center">
-            <p><a onclick="showAllSubjects()">See all 100</a></p>
-            <p><a onclick="generateRandomSubjects();">Generate new 100 subjects</a></p>
+            <p><a onclick="showAllSubjects()">See the first 30</a></p>
+            <p><a onclick="generateRandomSubjects();">Generate new <span class="number-of-people-in-simulation">0</span> subjects</a></p>
             <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Next step</a>
           </div>
         </div>
@@ -141,7 +141,7 @@
 
         <div class="row">
           <div class="col text-center">
-            <p>Reveal the rest of the 100 candidates</p>
+            <!-- <p>Reveal the rest of the <span class="number-of-people-in-simulation">0</span> candidates</p> -->
             <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Next step</a>
           </div>
         </div>
@@ -232,7 +232,8 @@
 
               <p>Another interesting observation is that successful people are probably not even aware of their own survivorship bias: they just feel it's all been hard work.</p>
 
-              <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Wait, is luck really just 5%?</a>
+              <!-- <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Wait, is luck really just 5%?</a> -->
+              <a href="#step-" type="button" class="btn btn-primary" onclick="">To be continued...</a>
 
             </div>
           </div>
@@ -240,7 +241,7 @@
       </div>
     </section>
 
-    <section id="step-" class="vertical-center">
+    <!-- <section id="step-" class="vertical-center">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3">
@@ -257,11 +258,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="step-" class="vertical-center">
+    <!-- <section id="step-" class="vertical-center">
       <div class="container">
         <div class="row">
+
           <div class="col-12 col-md-6 offset-md-3 text-center">
             <h2>You would have scored 231/100 <div>(top 50%)</div></h2>
           </div>
@@ -271,7 +273,7 @@
             <div class="row">
               <?php foreach (range(0, 2) as $subject_id) { ?>
                 <div class="col">
-                  <?php include('./_subject_box.php') ?>
+                  <?php #include('./_subject_box.php') ?>
                 </div>
               <?php } ?>
             </div>
@@ -294,12 +296,13 @@
 
   
 
-            <?php include('_footer_signature.php') ?>
+            <?php #include('_footer_signature.php') ?>
 
           </div>
+
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <?php #include('_made_by.php') ?>
