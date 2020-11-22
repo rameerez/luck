@@ -1,20 +1,34 @@
 const luck_impact = 0.05
 const effort_impact = 0.95
+const face_emojis = ["🧑", "👱", "👨", "🧔", "👨‍🦰", "👨‍🦱", "👨‍🦳", "👨‍🦲", "👩", "👩‍🦰", "🧑‍🦰", "👩‍🦱", "🧑‍🦱", "👩‍🦳", "🧑‍🦳", "👩‍🦲", "🧑‍🦲", "👱‍♀️", "👱‍♂️", "🧓", "👴", "👵"]
 
 const n_subjects = 100
+
+var subjects = []
 
 var getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
+var generateRandomSelf = () => {
+  subjects[0] = generateNewSubjectData();
+  updateSubjectData(subjects, 0);
+}
+
 var generateNewSubjectData = () => {
+  id = subjects.length
+
   luck = getRandomInt(100);
   effort = getRandomInt(100);
+
+  randomEmoji = face_emojis[Math.floor(Math.random() * face_emojis.length)];
 
   luck_component = (luck * luck_impact);
   effort_component = (effort * effort_impact);
 
   return {
+    id: id,
+    emoji: randomEmoji,
     raw_luck: luck,
     raw_effort: effort,
     luck_component: luck_component,
@@ -24,7 +38,6 @@ var generateNewSubjectData = () => {
 }
 
 var generateAllSubjects = () => {
-  var subjects = []
   for (i = 0; i < n_subjects; i++) {
     subjects[i] = generateNewSubjectData()
   }
@@ -67,5 +80,5 @@ $( document ).ready(function() {
   $("#luck-impact").text(luck_impact*100)
   $("#effort-impact").text(effort_impact*100)
 
-  updateAllSubjects()
+  // updateAllSubjects()
 });

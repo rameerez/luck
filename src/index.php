@@ -39,11 +39,11 @@
             <div class="text-center">
               <p>Let's take one random person as an example. <b>This will be you</b>.</p>
               <p>You will be represented by a random <b>🏋️ hard work score</b> (skill) and a random <b>🍀 luck score</b>. Your <b>🏆 total success</b> will be calculated as <span id="effort-impact"></span>% hard work and <span id="luck-impact"></span>% luck.</p>
-              <a href type="button" class="btn btn-primary" onclick="generateRandomSelf()">Generate your random self</a>
+              <a type="button" id="toggle-random-self-btn" class="btn btn-primary" onclick="generateRandomSelf(); toggleRandomSelf();">Generate your random self</a>
             </div>
           </div>
         </div>
-        <div class="row" id="random-self-row">
+        <div class="row d-none" id="random-self-row">
           <div class="col-sm-12 col-md-2 offset-md-5">
             <div id="random-self">
               <?php include('./_subject_box.php') ?>
@@ -53,9 +53,8 @@
             <p><a onclick="generateRandomSelf()">Re-generate your random self</a></p>
             <p>Play with the random generator until you're happy and ready to move on.</a>
           </div>
-        </div>
-        <div class="row">
-          <div class="col text-center">
+
+          <div class="col-12 text-center">
             <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Meet the rest</a>
           </div>
         </div>

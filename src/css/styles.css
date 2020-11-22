@@ -8,6 +8,11 @@ a:not([href]) {
   cursor: pointer;
 }
 
+a:not([href]).btn {
+  color: white !important;
+  text-decoration: none;
+}
+
 section {
   min-height: 100vh;
 }

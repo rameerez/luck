@@ -1,7 +1,8 @@
 var step = 0;
 
-var generateRandomSelf = () => {
-  console.log("akjsd")
+var toggleRandomSelf = () => {
+  $("#toggle-random-self-btn").toggleClass("d-none");
+  $("#random-self-row").toggleClass("d-none");
 }
 
 var showAllSubjects = () => {
