@@ -40,7 +40,7 @@
           <div class="col-sm-12 col-md-6 offset-md-3">
             <div class="text-center">
               <p>Let's take one random person as an example. <b>This will be you</b>.</p>
-              <p>You will be represented by a random <b>🏋️ hard work score</b> (skill) and a random <b>🍀 luck score</b>. Your <b>🏆 total success</b> will be calculated as <span id="effort-impact"></span>% hard work and <span id="luck-impact"></span>% luck.</p>
+              <p>You will be represented by a random <b>🏋️ hard work score</b> (skill) and a random <b>🍀 luck score</b>. Your <b>🏆 total success</b> will be calculated as <span id="effort-impact"></span>% hard work and <span class="luck-impact">0</span>% luck.</p>
               <a type="button" id="toggle-random-self-btn" class="btn btn-primary" onclick="generateRandomSelf(); toggleRandomSelf();">Generate your random self</a>
             </div>
           </div>
@@ -155,7 +155,7 @@
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3 text-center">
             <div class="text-center">
-              <p>Top candidates have a <b>📈 very consistent good deal of luck</b>, even though luck only accounts for 5% of the overall success.</p>
+              <p>Top candidates have a <b>📈 very consistent good deal of luck</b>, even though luck only accounts for <span class="luck-impact">0</span>% of the overall success.</p>
               <p>Another interesting point is that <b>no one reaches the top by luck alone</b>: working hard is just a pre-requisite. Luck just stacks on top of hard work.</p>
               <p>Is this fair? What if we removed luck?</p>
               <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="onRemoveLuck()">Discover what happens if we remove luck</a>
@@ -244,7 +244,7 @@
       </div>
     </section>
 
-    <!-- <section id="step-" class="vertical-center">
+    <section id="step-" class="vertical-center">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3">
@@ -253,15 +253,15 @@
 
               <p>So, does luck really account for only 5% of total success – or is it really more? Play yourself with the numbers – or move on to the next step.</p>
 
-              <input type="range" class="custom-range my-5" id="customRange1">
+              <input type="range" class="custom-range my-5" id="luck-selector" min="0" max="100" value="5" step="1">
 
-              <a href="#step-2" type="button" class="btn btn-secondary" onclick="">Re-play with a 20% luck</a>
+              <a href="#step-2" type="button" class="btn btn-secondary" onclick="">Re-play with a <span class="luck-impact">0</span>% luck</a>
               <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">How would you compare to others?</a>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- <section id="step-" class="vertical-center">
       <div class="container">
