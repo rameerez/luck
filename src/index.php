@@ -295,7 +295,7 @@
 
             <p>So go ahead and <b>share this thought experiment</b> – and make other people think, too.</p>
             
-            <div class="row my-4">
+            <div class="row mt-4 mb-5">
               <div class="col text-center text-md-right">
                 <a class="share-button copy-share-link"
                   href="javascript:void(null)" data-copy="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>" onclick="copyIt(this)">
@@ -311,21 +311,36 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 offset-md-3 text-center mt-0 mt-md-3">
+          <div class="col-12 col-md-6 offset-md-3 text-center mt-3">
           
 
-            <p><b>Support my work 🎉</b></p>
+            <p><b>Did you like this? Support my work 🎉</b></p>
 
             <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="rameerez" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 
-            <p class="mt-3">Check out the products I make</p>
+            <p class="mt-5"><b>Check out the other products I make ✨</b></p>
 
-            <div class="row">
-              <div class="col">
-                Hustl
+            <div class="row mt-4 mb-5 mb-md-3">
+              <div class="col-12 col-md-6">
+
+                <a class="product-snippet" href="https://gohustl.co/?ref=rameerez&utm_source=rameerez.com&utm_medium=referral&utm_campaign=success-hard-work-vs-luck">
+                  <div class="product-logo" style='background-image: url("https://gohustl.co/images/apple-touch-icon.png"); background-size: cover;'></div>
+                  <div class="text-left">
+                    <span class="product-name">Hustl</span>
+                    <span class="product-description">Create screen time-lapses</span>
+                  </div>
+                </a>
+
               </div>
-              <div class="col">
-                Edit
+
+              <div class="col-12 col-md-6 mt-4 mt-md-0">
+                <a class="product-snippet" href="https://goedit.me/?ref=rameerez&utm_source=rameerez.com&utm_medium=referral&utm_campaign=success-hard-work-vs-luck">
+                  <div class="product-logo" style='background-image: url("https://goedit.me/images/apple-touch-icon.png"); background-size: cover;'></div>
+                  <div class="text-left">
+                    <span class="product-name">Edit</span>
+                    <span class="product-description">Edit any website without code</span>
+                  </div>
+                </a>
               </div>
             </div>
 
