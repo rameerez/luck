@@ -1,8 +1,9 @@
-const luck_impact = 0.05
-const effort_impact = 0.95
 const face_emojis = ["🧑", "👱", "👨", "🧔", "👨‍🦰", "👨‍🦱", "👨‍🦳", "👨‍🦲", "👩", "👩‍🦰", "🧑‍🦰", "👩‍🦱", "🧑‍🦱", "👩‍🦳", "🧑‍🦳", "👩‍🦲", "🧑‍🦲", "👱‍♀️", "👱‍♂️", "🧓", "👴", "👵"]
 
 const n_subjects = 1000
+
+var luck_impact = 0.05
+var effort_impact = 1 - luck_impact
 
 var subjects = []
 var sortedSubjects = []
@@ -138,13 +139,25 @@ var onNewSubjectButtonClick = () => {
   generateAllSubjects()
 }
 
+var setLuck = val => {
+  luck_impact = val
+  effort_impact = 1 - luck_impact
+  $(".luck-impact").text(Math.trunc(luck_impact*100))
+  $("#effort-impact").text(Math.trunc(effort_impact*100))
+  $("#luck-selector").val(Math.trunc(luck_impact*100));
+}
+
 $( document ).ready(function() {
   initSteps();
   initNextButtons();
 
-  $("#luck-impact").text(luck_impact*100)
-  $("#effort-impact").text(effort_impact*100)
+  setLuck(0.05);
   $(".number-of-people-in-simulation").text(n_subjects)
 
   // updateAllSubjects()
+});
+
+$(document).on('input', '#luck-selector', e => {
+  var newLuckValue = (Math.round(e.target.value) / 100).toFixed(2);
+  setLuck(newLuckValue)
 });
