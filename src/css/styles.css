@@ -38,6 +38,10 @@ h1 .success-subtitle {
   font-weight: lighter;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 .btn.btn-primary {
   border: 2px solid rgba(0, 0, 0, 0.9);
   color: rgba(0, 0, 0, 0.9);

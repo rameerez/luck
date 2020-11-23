@@ -24,7 +24,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 offset-md-3">
             <div class="text-center">
-              <p>Entrepreneurs, athletes, artists, politicians, astronauts... there's one thing they all have in common: success. Most will say this is just the product of skill, hard work and dedication: <br /><b>but is it really?</b></p>
+              <p>Entrepreneurs, athletes, artists, politicians, astronauts... there's one thing they all have in common: <b>success</b>. Most will say this is just the product of skill, hard work and dedication: <br /><b>but is it really?</b></p>
               <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Let's find out</a>
             </div>
           </div>
@@ -110,7 +110,7 @@
     <section id="step-" class="vertical-center">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center">
+          <div class="col-sm-12 col-md-6 offset-md-3 text-center">
             <h2>The top 10 performers</h2>
             <p>These are the top 10 performers. Do you see <b>the pattern</b> among them? <a onclick="updateTopMetrics(); revealPattern(); ">Reveal the pattern</a></p>
           </div>
@@ -127,7 +127,7 @@
             <p class="key-metric"><span class="big-figure"><span id="average-success">0</span>%</span> <br />Average success</p>
           </div>
           <div class="col-12 text-center">
-            <p>Most people in the top 10 are luckier than average.</p>
+            <p>People in the top 10 tend to be way luckier than average.</p>
           </div>
         </div>
 
@@ -153,7 +153,7 @@
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3 text-center">
             <div class="text-center">
-              <p>Top candidates have a <b>very consistent good deal of luck</b>, even though luck only accounts for 5% of the overall success.</p>
+              <p>Top candidates have a <b>📈 very consistent good deal of luck</b>, even though luck only accounts for 5% of the overall success.</p>
               <p>Another interesting point is that <b>no one reaches the top by luck alone</b>: working hard is just a pre-requisite. Luck just stacks on top of hard work.</p>
               <p>Is this fair? What if we removed luck?</p>
               <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="onRemoveLuck()">Discover what happens if we remove luck</a>
