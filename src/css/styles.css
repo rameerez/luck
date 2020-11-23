@@ -48,6 +48,9 @@ h2 {
   border-radius: 18px;
   transition: all 0.4s;
   padding: 0.7em 3.5em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .btn.btn-primary:hover {
