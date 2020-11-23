@@ -60,13 +60,13 @@ var generateRandomSubjects = () => {
 
 var sortSubjectsBySuccess = () => {
   return subjects.slice().sort(function(a, b) {
-    return a.total < b.total;
+    return a.total > b.total ? -1 : 1;
   });
 }
 
 var sortSubjectsByEffort = () => {
   return subjects.slice().sort(function(a, b) {
-    return a.raw_effort < b.raw_effort;
+    return a.raw_effort > b.raw_effort ? -1 : 1;
   });
 }
 

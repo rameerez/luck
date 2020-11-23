@@ -24,7 +24,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 offset-md-3">
             <div class="text-center">
-              <p>Entrepreneurs, athletes, artists, politicians, astronauts... there's one thing they all have in common: success. Most will say this is just the product of skill, hard work and dedication: <b>but is it really?</b></p>
+              <p>Entrepreneurs, athletes, artists, politicians, astronauts... there's one thing they all have in common: success. Most will say this is just the product of skill, hard work and dedication: <br /><b>but is it really?</b></p>
               <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Let's find out</a>
             </div>
           </div>
@@ -35,7 +35,7 @@
     <section id="step-" class="vertical-center">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-8 offset-md-2">
+          <div class="col-sm-12 col-md-6 offset-md-3">
             <div class="text-center">
               <p>Let's take one random person as an example. <b>This will be you</b>.</p>
               <p>You will be represented by a random <b>🏋️ hard work score</b> (skill) and a random <b>🍀 luck score</b>. Your <b>🏆 total success</b> will be calculated as <span id="effort-impact"></span>% hard work and <span id="luck-impact"></span>% luck.</p>
@@ -99,7 +99,7 @@
     <section id="step-" class="vertical-center">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-8 offset-md-2 text-center">
+          <div class="col-sm-12 col-md-6 offset-md-3 text-center">
             <p>Okay, your peers seem pretty random, but... is there any pattern we can see? What if we sort all people by <b>🏆 total success</b> and look just at the top 10 performers?</p>
             <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="sortAndUpdateSubjects()">Sort and reveal the top 10 people</a>
           </div>
@@ -195,7 +195,7 @@
 
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3 text-center">
-            <p><span id="number-of-same-subjects">0</span> out of 10 of them are different people. Only <span id="number-of-different-subjects">0</span> remain the same.</p>
+            <p><span id="number-of-same-subjects">0</span> out of 10 of them are different people – <span id="number-of-different-subjects">0</span> remain the same.</p>
             <!-- <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">But the world is big enough...</a> -->
             <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Is there anything we can do?</a>
           </div>
@@ -226,8 +226,8 @@
               <p>While there's not much we can do to compensate this effect, this experiment allows to draw two key conclusions:</p>
 
               <ol class="my-5">
-                <li>You need to <b>work at 100%</b> of your abilities to even stand a chance.</li>
-                <li>You need to <b>maximize your luck</b> by maximizing the opportunities you're exposed to, if you want to get to the top.</li>
+                <li>You need to <b>🏋️ work at 100%</b> of your abilities to even stand a chance.</li>
+                <li>You need to <b>🍀 maximize your luck</b> by maximizing the opportunities you're exposed to, if you want to get to the top.</li>
               </ol>
 
               <p>Another interesting observation is that successful people are probably not even aware of their own survivorship bias: they just feel it's all been hard work.</p>
