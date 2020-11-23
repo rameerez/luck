@@ -50,7 +50,7 @@ var generateAllSubjects = () => {
 }
 
 var updateAllSubjectsInArray = (arr, arrType) => {
-  for (i = 0; i < arr.length-1; i++) {
+  for (i = 0; i <= arr.length-1; i++) {
     updateSubjectData(arr, i, arrType)
   }
 }
@@ -75,6 +75,18 @@ var sortSubjectsByEffort = () => {
 var sortAndUpdateSubjects = () => {
   sortedSubjects = sortSubjectsBySuccess();
   updateAllSubjectsInArray(sortedSubjects, "sorted");
+  calculateAndShowCurrentPlayerPosition();
+}
+
+var calculateAndShowCurrentPlayerPosition = () => {
+  var playerIndexInSimulation = sortedSubjects.map(e => e.id).indexOf(0);
+  $(".position-in-simulation").text(playerIndexInSimulation)
+  var playerSandwich = [
+    sortedSubjects[playerIndexInSimulation-1],
+    sortedSubjects[playerIndexInSimulation],
+    sortedSubjects[playerIndexInSimulation+1]
+  ]
+  updateAllSubjectsInArray(playerSandwich, "player-position");
 }
 
 var computeTop10Metrics = () => {

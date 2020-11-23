@@ -263,12 +263,12 @@
       </div>
     </section>
 
-    <!-- <section id="step-" class="vertical-center">
+    <section id="step-" class="vertical-center">
       <div class="container">
         <div class="row">
 
           <div class="col-12 col-md-6 offset-md-3 text-center">
-            <h2>You would have scored 231/100 <div>(top 50%)</div></h2>
+            <h2>You would have scored <span class="position-in-simulation">0</span>/<span class="number-of-people-in-simulation">0</span></h2>
           </div>
 
           <div class="col-12 col-md-6 offset-md-3 text-center">
@@ -276,10 +276,17 @@
             <div class="row">
               <?php foreach (range(0, 2) as $subject_id) { ?>
                 <div class="col">
-                  <?php #include('./_subject_box.php') ?>
+                  <?php $subject_type = "player-position"; include('./_subject_box.php') ?>
                 </div>
               <?php } ?>
             </div>
+
+            <div class="row">
+              <div class="col text-center">
+                <b>↑ You ↑</b>
+              </div>
+            </div>
+
 
           </div>
 
@@ -305,7 +312,7 @@
 
         </div>
       </div>
-    </section> -->
+    </section>
 
 
     <?php #include('_made_by.php') ?>
