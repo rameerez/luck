@@ -235,8 +235,7 @@
 
               <p>Another interesting observation is that successful people are probably not even aware of their own survivorship bias: they just feel it's all been hard work.</p>
 
-              <!-- <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Wait, is luck really just 5%?</a> -->
-              <a href="#step-" type="button" class="btn btn-primary" onclick="">To be continued...</a>
+              <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Wait, is luck really just 5%?</a>
 
             </div>
           </div>
@@ -290,12 +289,16 @@
 
           </div>
 
-          <div class="col-12 col-md-6 offset-md-3 text-center d-none">
+          <div class="col-12 col-md-6 offset-md-3 text-center mt-0 mt-md-5">
 
             <p>You only can maximize success in your life by maximizing opportunities, and do that by getting out there and making your voice heard.</p>
 
-            <p>So go ahead and share this thought experiment – and make other people think, too.</p>
+            <p>So go ahead and <b>share this thought experiment</b> – and make other people think, too.</p>
             
+          </div>
+
+          <div class="col-12 col-md-6 offset-md-3 text-center mt-0 mt-md-5">
+          
             <p>share here there TW FB IG LN etc</p>
 
             <p>Buy me a coffee. / patreon?</p>
