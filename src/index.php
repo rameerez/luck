@@ -297,19 +297,21 @@
             
           </div>
 
-          <div class="col-12 col-md-6 offset-md-3 text-center mt-0 mt-md-5">
+          <div class="col-12 col-md-6 offset-md-3 text-center mt-0 mt-md-3">
           
-            <p>share here there TW FB IG LN etc</p>
+            <p>TW FB IG LN etc</p>
 
             <p>Buy me a coffee. / patreon?</p>
 
             <p>Check out my products</p>
 
-            <input type="email" placeholder="newsletter" />
+            <!-- <input type="email" placeholder="newsletter" /> -->
+          </div>
 
+          <div class="col-12 col-md-6 offset-md-3 text-center my-0 my-md-5">
   
 
-            <?php #include('_footer_signature.php') ?>
+            <?php include('_footer_signature.php') ?>
 
           </div>
 
