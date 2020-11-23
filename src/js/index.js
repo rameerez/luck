@@ -14,6 +14,7 @@ var getRandomInt = (max) => {
 }
 
 var generateRandomSelf = () => {
+  subjects = []
   subjects[0] = generateNewSubjectData();
   updateSubjectData(subjects, 0, "random");
 }
