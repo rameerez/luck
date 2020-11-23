@@ -74,7 +74,7 @@
 
         <div id="first-12-candidates" class="row">
           <?php foreach (range(1, 6) as $subject_id) { ?>
-            <div class="col-6 col-md-2 mt-5">
+            <div class="col-6 col-md-2 mt-0 mt-md-5">
               <?php $subject_type = "random"; include('./_subject_box.php') ?>
             </div>
           <?php } ?>
@@ -135,7 +135,7 @@
 
         <div class="row">
           <?php foreach (range(0, 9) as $subject_id) { ?>
-            <div class="col my-5 tiny-subject-box">
+            <div class="col-6 col-md my-0 my-md-5 tiny-subject-box">
               <?php $subject_type = "sorted"; include('./_subject_box.php'); ?>
             </div>
           <?php } ?>
@@ -176,7 +176,7 @@
         </div>
         <div class="row">
           <?php foreach (range(0, 9) as $subject_id) { ?>
-            <div class="col my-5 tiny-subject-box">
+            <div class="col-6 col-md my-0 my-md-5 tiny-subject-box">
               <?php $subject_type = "noluck"; include('./_subject_box.php') ?>
             </div>
           <?php } ?>
@@ -191,7 +191,7 @@
         </div>
         <div class="row">
           <?php foreach (range(0, 9) as $subject_id) { ?>
-            <div class="col my-5 tiny-subject-box">
+            <div class="col-6 col-md my-0 my-md-5 tiny-subject-box">
               <?php $subject_type = "sorted-2"; include('./_subject_box.php') ?>
             </div>
           <?php } ?>
