@@ -1,6 +1,8 @@
 <html>
   <head>
+    <title>Success: is it really hard work or just luck? | Rameerez</title>
     <?php include('./_head_imports.php') ?>
+    <?php include('./_metadata.php') ?>
   </head>
 
   <body>
@@ -168,7 +170,7 @@
 
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3 text-center">
-            <h2>The top 10 performers – if luck was not considered</h2>
+            <h2>The top 10 performers <br/>if luck was not considered</h2>
             <p>Imagine a world where luck was not even a concept and success was entirely determined by hard work alone. These would be the top 10 performers if luck was not considered.</p>
           </div>
         </div>
@@ -182,7 +184,9 @@
 
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3 text-center">
-            <p>And, for reference, these were original the top 10 performers.</p>
+            <p><span id="number-of-same-subjects">0</span> out of 10 of them are different people – <span id="number-of-different-subjects">0</span> remain the same.</p>
+
+            <p>For reference, these were original the top 10 performers:</p>
           </div>
         </div>
         <div class="row">
@@ -195,7 +199,6 @@
 
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3 text-center">
-            <p><span id="number-of-same-subjects">0</span> out of 10 of them are different people – <span id="number-of-different-subjects">0</span> remain the same.</p>
             <!-- <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">But the world is big enough...</a> -->
             <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Is there anything we can do?</a>
           </div>

@@ -52,7 +52,7 @@
 
     <div class="row">
       <div class="col">
-        🏆 <span class="total">Tot.</span>
+        🏆 <span class="total">Total</span>
       </div>
       <div class="col text-right <?php echo $subject_type!="random" ? "d-none" : "" ?>">
         <span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-result-total-score"></span><span class="of-100">/100</span>
