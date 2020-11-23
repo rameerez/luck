@@ -117,3 +117,36 @@ h2 {
   text-decoration: none !important;
   color: rgba(0, 0, 0, 0.95) !important;
 }
+
+.product-snippet {
+  display: flex;
+  color: black;
+  /* position: absolute; */
+  align-items: center;
+}
+
+.product-snippet:hover {
+  text-decoration: none;
+}
+
+.product-logo {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  margin-right: 8px;
+
+  border-radius: 4px;
+  transition: all 0.1s ease;
+  box-shadow: inset rgba(0, 0, 0, 0.11) 0 0 0 1px;
+}
+
+.product-name {
+  font-weight: bolder;
+}
+
+.product-description {
+  color: #646369;
+  transition: all 0.1s ease;
+  margin-right: 4px;
+}
