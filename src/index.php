@@ -295,15 +295,39 @@
 
             <p>So go ahead and <b>share this thought experiment</b> – and make other people think, too.</p>
             
+            <div class="row my-4">
+              <div class="col text-center text-md-right">
+                <a class="share-button copy-share-link"
+                  href="javascript:void(null)" data-copy="<?php echo "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>" onclick="copyIt(this)">
+                  🔗 <span>Copy link</span>
+                </a>
+              </div>
+              <div class="col text-center text-md-left">
+                <a class="share-button"
+                  onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" href="https://twitter.com/intent/tweet?text=I just learned success has more to do with luck than hard work 🤔 %0a%0aCheck it out yourself here — https://rameerez.com/success-hard-work-vs-luck via @rameerez">
+                  🐦 Tweet this
+                </a>
+              </div>
+            </div>
           </div>
 
           <div class="col-12 col-md-6 offset-md-3 text-center mt-0 mt-md-3">
           
-            <p>TW FB IG LN etc</p>
 
-            <p>Buy me a coffee.</p>
+            <p><b>Support my work 🎉</b></p>
 
-            <p>Check out my products</p>
+            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="rameerez" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+
+            <p class="mt-3">Check out the products I make</p>
+
+            <div class="row">
+              <div class="col">
+                Hustl
+              </div>
+              <div class="col">
+                Edit
+              </div>
+            </div>
 
             <!-- <input type="email" placeholder="newsletter" /> -->
           </div>
@@ -323,6 +347,7 @@
     <?php include('_made_by.php') ?>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="./assets/clipboard.min.js"></script>
     <script src="./js/navigation.js"></script>
     <script src="./js/index.js"></script>
   </body>

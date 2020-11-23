@@ -109,3 +109,11 @@ h2 {
   font-size: 32px;
   font-weight: bold;
 }
+
+.share-button {
+  background: rgba(34, 34, 34, 0.05);
+  border-radius: 40px;
+  padding: 9px 16px;
+  text-decoration: none !important;
+  color: rgba(0, 0, 0, 0.95) !important;
+}
