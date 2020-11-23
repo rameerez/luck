@@ -15,13 +15,13 @@
 
   <p class="d-none">:</p>
 
-  <div class="luck-bar-wrapper mt-2 <?php echo $subject_type=="noluck" ? "d-none" : "" ?>">
+  <div class="luck-bar-wrapper mt-2 <?php echo $subject_type=="noluck" || $subject_type=="sorted-2" ? "d-none" : "" ?>">
 
     <div class="row">
       <div class="col">
         🍀 <span class="luck">Luck</span>
       </div>
-      <div class="col text-right">
+      <div class="col text-right <?php echo $subject_type!="random" ? "d-none" : "" ?>">
         <span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-raw-luck"></span><span class="of-100">/100</span>
       </div>
     </div>
@@ -32,13 +32,13 @@
     </div>
   </div>
 
-  <div class="effort-bar-wrapper mt-2">
+  <div class="effort-bar-wrapper mt-2 <?php echo $subject_type=="sorted-2" ? "d-none" : "" ?>">
     
     <div class="row">
       <div class="col">
         🏋️ <span class="skill">Skill</span>
       </div>
-      <div class="col text-right">
+      <div class="col text-right <?php echo $subject_type!="random" ? "d-none" : "" ?>">
         <span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-raw-effort"></span><span class="of-100">/100</span>
       </div>
     </div>
@@ -48,13 +48,13 @@
     </div>
   </div>
 
-  <div class="success-bar-wrapper mt-2">
+  <div class="success-bar-wrapper mt-2 <?php echo $subject_type=="noluck" ? "d-none" : "" ?>">
 
     <div class="row">
       <div class="col">
         🏆 <span class="total">Tot.</span>
       </div>
-      <div class="col text-right">
+      <div class="col text-right <?php echo $subject_type!="random" ? "d-none" : "" ?>">
         <span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-result-total-score"></span><span class="of-100">/100</span>
       </div>
     </div>
