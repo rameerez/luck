@@ -301,7 +301,7 @@
           
             <p>TW FB IG LN etc</p>
 
-            <p>Buy me a coffee. / patreon?</p>
+            <p>Buy me a coffee.</p>
 
             <p>Check out my products</p>
 
@@ -320,7 +320,7 @@
     </section>
 
 
-    <?php #include('_made_by.php') ?>
+    <?php include('_made_by.php') ?>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="./js/navigation.js"></script>
