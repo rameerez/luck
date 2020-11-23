@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 body {
   font-family: "Patrick Hand", Arial, Helvetica, sans-serif;
@@ -62,7 +61,7 @@ h2 {
 }
 
 .subject-box {
-  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  /* font-family: "Nunito", Arial, Helvetica, sans-serif; */
   font-size: 10px;
   text-transform: uppercase;
   background: rgba(0, 0, 0, 0.8);
