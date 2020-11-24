@@ -14,6 +14,7 @@
             <div class="text-center">
               <h1><span class="success">Success</span><div class="success-subtitle">is it really hard work – or just luck?</div></h1>
               <a href="#step-" type="button" class="btn-next btn btn-primary mt-3" onclick="">Play game</a>
+              <div class="mt-2" style="font-size: 12px; color: rgba(0,0,0,0.3);">Play time: 3 min</div>
             </div>
           </div>
         </div>
@@ -184,7 +185,7 @@
 
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3 text-center">
-            <p><span id="number-of-same-subjects">0</span> out of 10 of them are different people – <b>only <span id="number-of-different-subjects">0</span> remain the same</b>.</p>
+            <p><span id="number-of-same-subjects">0</span> out of 10 of them are different people – <b>only <span id="number-of-different-subjects">0</span> remain the same</b> when we take luck out of the equation.</p>
 
             <p class="d-none">For reference, these were original the top 10 performers:</p>
           </div>
