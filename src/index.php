@@ -144,7 +144,7 @@
         <div class="row">
           <div class="col text-center">
             <!-- <p>Reveal the rest of the <span class="number-of-people-in-simulation">0</span> candidates</p> -->
-            <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Next step</a>
+            <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">So... what now?</a>
           </div>
         </div>
       </div>

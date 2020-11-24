@@ -13,7 +13,7 @@
 <meta property="og:image" content="https://rameerez.com/success-hard-work-vs-luck/images/hard-work-vs-skill-og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:site_name" content="Hustl">
+<meta property="og:site_name" content="Rameerez">
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter card -->
