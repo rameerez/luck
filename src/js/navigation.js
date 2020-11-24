@@ -17,6 +17,7 @@ var revealPattern = () => {
 var initSteps = () => {
   $("section").each( (i, e) => { 
     $(e).attr('id', 'step-' + i);
+    if(i>0){ $(e).toggleClass('d-none'); }
   });
 }
 
@@ -25,6 +26,14 @@ var initNextButtons = () => {
     $(e).attr('href', '#step-' + (i+1) );
   });
 }
+
+$(".btn-next").on("click", e => {
+  e.preventDefault;
+  if ($(e.target).parents('section').length > 0) {
+    $(e.target).parents('section').toggleClass("d-none")
+    $($(e.target).attr("href")).toggleClass("d-none")
+  }
+})
 
 
 

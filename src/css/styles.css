@@ -19,8 +19,13 @@ a:not([href]).btn {
   text-decoration: none;
 }
 
+ol {
+  padding-left: 1em;
+}
+
 section {
   min-height: 100vh;
+  padding: 3em 0;
 }
 
 h1 {
