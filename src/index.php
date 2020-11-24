@@ -184,12 +184,13 @@
 
         <div class="row">
           <div class="col-12 col-md-6 offset-md-3 text-center">
-            <p><span id="number-of-same-subjects">0</span> out of 10 of them are different people – <span id="number-of-different-subjects">0</span> remain the same.</p>
+            <p><span id="number-of-same-subjects">0</span> out of 10 of them are different people – <b>only <span id="number-of-different-subjects">0</span> remain the same</b>.</p>
 
-            <p>For reference, these were original the top 10 performers:</p>
+            <p class="d-none">For reference, these were original the top 10 performers:</p>
           </div>
         </div>
-        <div class="row">
+
+        <div class="row d-none">
           <?php foreach (range(0, 9) as $subject_id) { ?>
             <div class="col-6 col-md my-0 my-md-5 tiny-subject-box">
               <?php $subject_type = "sorted-2"; include('./_subject_box.php') ?>
@@ -254,7 +255,7 @@
 
               <input type="range" class="custom-range my-5" id="luck-selector" min="0" max="100" value="5" step="1">
 
-              <a href="#step-2" type="button" class="btn btn-secondary" onclick="">Re-play with a <span class="luck-impact">0</span>% luck</a>
+              <a href="#step-2" class="btn mb-3">Re-play with a <span class="luck-impact">0</span>% luck</a>
               <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">How would you compare to others?</a>
             </div>
           </div>
