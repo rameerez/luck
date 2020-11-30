@@ -23,6 +23,14 @@ body {
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; */
 }
 
+#dark-mode-toggle {
+  position: fixed;
+  top: 1em;
+  right: 0.5em;
+  font-size: 10px;
+  transform: scale(60%);
+}
+
 body.dark {
   background: var(--main-dark-color);
   color: var(--main-light-color);
@@ -168,11 +176,11 @@ body.dark .self-subject-box .subject-box {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: lighter;
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
 .key-metric.important-metric {
-  color: rgba(0, 0, 0, 0.9);
+  opacity: 0.9;
 }
 
 .key-metric .big-figure {
