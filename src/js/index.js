@@ -32,6 +32,7 @@ var generateNewSubjectData = () => {
 
   return {
     id: id,
+    name: (id == 0 ? "You": faker.name.firstName().substring(0,1) + ". " + faker.name.lastName() ),
     emoji: randomEmoji,
     raw_luck: luck,
     raw_effort: effort,
@@ -134,6 +135,7 @@ var updateSubjectData = (subjects, subjectIndex, subjectType) => {
   var subjectData = subjects[subjectIndex]
 
   $("#subject-" + subjectType + "-" + subjectIndex + "-id").text(subjectData.id)
+  $("#subject-" + subjectType + "-" + subjectIndex + "-name").text(subjectData.name)
   $("#subject-" + subjectType + "-" + subjectIndex + "-emoji").text(subjectData.emoji)
 
   $("#subject-" + subjectType + "-" + subjectIndex + "-raw-luck").text(subjectData.raw_luck)

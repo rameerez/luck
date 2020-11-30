@@ -8,12 +8,14 @@
   <div class="row mb-4">
     <div class="col text-right subject-info">
       <span style="font-size: 14px;" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-emoji">🧑</span>
-      <!-- <div id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name" class="<?php echo $subject_id == 0 ? "" : "d-none" ?>"><b>You</b></div> -->
-      <div><span class="subject">subject</span> #<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0<span></div>
+      <div>
+        <span class="subject-id-wrapper">
+          <span class="subject">subject</span> #<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>
+        </span>
+        <br />
+        <span class="subject-name" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name"></span></div>
     </div>
   </div>
-
-  <p class="d-none">:</p>
 
   <div class="luck-bar-wrapper mt-2 <?php echo $subject_type=="noluck" || $subject_type=="sorted-2" ? "d-none" : "" ?>">
 
