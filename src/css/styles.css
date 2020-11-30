@@ -57,6 +57,15 @@ body.dark .key-metric {
   color: var(--main-light-color);
 }
 
+body.dark .product-snippet {
+  color: var(--main-light-color);
+}
+
+body.dark .share-button {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--main-light-color) !important;
+}
+
 .progress-bar.bg-success {
   background-color: var(--main-color) !important;
 }
@@ -206,12 +215,12 @@ body.dark .self-subject-box .subject-box {
   border-radius: 40px;
   padding: 9px 16px;
   text-decoration: none !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: var(--main-dark-color) !important;
 }
 
 .product-snippet {
   display: flex;
-  color: black;
+  color: var(--main-dark-color);
   /* position: absolute; */
   align-items: center;
 }
