@@ -42,7 +42,8 @@ $(".btn-next").on("click", e => {
 var chk = document.getElementById('chk');
 
 chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
+  document.body.classList.toggle('dark');
+  $(".footer-signature").toggleClass("d-none")
 });
 
 
