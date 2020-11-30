@@ -4,8 +4,12 @@
     <?php include('./_head_imports.php') ?>
     <?php include('./_metadata.php') ?>
   </head>
-
+  
   <body class="dark">
+
+    <div id="dark-mode-toggle">
+      <?php include('./_dark_mode_toggle.php') ?>
+    </div>
 
     <section id="step-" class="vertical-center">
       <div class="container">
@@ -259,7 +263,7 @@
 
           <div class="col-12 col-md-6 offset-md-3 text-center">
             <h2>You would have scored <span class="position-in-simulation">0</span>/<span class="number-of-people-in-simulation">0</span></h2>
-            <p>You would have been more successful than 50% of people</div>
+            <p>50% of people would have been more successful than you</div>
           </div>
 
           <div class="col-12 col-md-6 offset-md-3 text-center">

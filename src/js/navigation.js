@@ -39,6 +39,12 @@ $(".btn-next").on("click", e => {
   }
 })
 
+var chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
 
 
 function copy_sleep(ms) {
