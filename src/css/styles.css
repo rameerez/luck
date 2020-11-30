@@ -104,8 +104,13 @@ h1 .success-subtitle {
   font-weight: lighter;
 }
 
-h2 {
+h2,
+h3 {
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 .btn.btn-primary {
