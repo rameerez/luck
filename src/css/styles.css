@@ -1,7 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
+:root {
+  --main-dark-color: #202020;
+  --lighter-dark-color: #262626;
+  --main-light-color: #fcfffb;
+
+  --main-color: #7dd851;
+  --main-contrast-color: #fa965e;
+}
+
 body {
   font-family: "Patrick Hand", Arial, Helvetica, sans-serif;
+  color: var(--main-dark-color);
+  background-color: var(--main-light-color);
+  /* color: #fff; */
+  /* background-color: #0579ce; */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.01) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.01) 2px, transparent 2px),
+    linear-gradient(rgba(0, 0, 0, 0.01) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.01) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; */
+}
+
+body.dark {
+  background: var(--main-dark-color);
+  color: var(--main-light-color);
+}
+
+body.dark .btn.btn-primary {
+  border-color: var(--main-light-color);
+  color: rgba(255, 255, 255, 0.9);
+  background: transparent;
+}
+
+body.dark .btn.btn-primary:hover {
+  box-shadow: 4px 4px 0 0 rgba(182, 68, 157, 0.6);
+}
+
+body.dark .subject-box {
+  background: var(--lighter-dark-color);
+  color: var(--main-light-color);
+  box-shadow: 0px 0px 10px #0c0c0c;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark .key-metric {
+  color: var(--main-light-color);
+}
+
+.progress-bar.bg-success {
+  background-color: var(--main-color) !important;
+}
+
+.progress-bar.bg-warning {
+  background-color: var(--main-contrast-color) !important;
 }
 
 .vertical-center {
@@ -50,7 +103,7 @@ h2 {
 .btn.btn-primary {
   border: 2px solid rgba(0, 0, 0, 0.9);
   color: rgba(0, 0, 0, 0.9);
-  background: transparent;
+  background: var(--main-light-color);
   border-radius: 18px;
   transition: all 0.4s;
   padding: 0.7em 3.5em;
@@ -73,13 +126,24 @@ h2 {
   /* font-family: "Nunito", Arial, Helvetica, sans-serif; */
   font-size: 10px;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--main-dark-color);
   color: rgba(255, 255, 255, 0.9);
   padding: 2em;
   margin: 3em 0;
   border-radius: 12px;
   box-shadow: 0px 0px 10px #d9d9d9;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.self-subject-box .subject-box,
+body.dark .self-subject-box .subject-box {
+  transform: scale(105%);
+  border: 1px solid #3da488;
+  box-shadow: 0px 0px 7px #3da488;
+}
+
+.subject-box-figure {
+  font-weight: bolder;
 }
 
 /* @media screen and (min-width: 768px) {

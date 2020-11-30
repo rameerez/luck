@@ -5,7 +5,7 @@
     <?php include('./_metadata.php') ?>
   </head>
 
-  <body>
+  <body class="dark">
 
     <section id="step-" class="vertical-center">
       <div class="container">
@@ -13,8 +13,8 @@
           <div class="col">
             <div class="text-center">
               <h1><span class="success">Success</span><div class="success-subtitle">is it really hard work – or just luck?</div></h1>
-              <a href="#step-" type="button" class="btn-next btn btn-primary mt-3" onclick="">Play</a>
-              <div class="mt-2" style="font-size: 12px; color: rgba(0,0,0,0.3);">Playing time: 3 min</div>
+              <a href="#step-" type="button" class="btn-next btn btn-primary mt-3" onclick="">🍀 Play</a>
+              <div class="mt-2" style="font-size: 12px; opacity: 0.3;">Playing time: 3 min</div>
             </div>
           </div>
         </div>
@@ -134,12 +134,20 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row my-md-5">
+
           <?php foreach (range(0, 9) as $subject_id) { ?>
-            <div class="col-6 col-md my-0 my-md-5 tiny-subject-box">
+            <div class="col-6 col-md-2 my-0 tiny-subject-box first-top-6 <?php echo $subject_id >= 6 ? "remaining-top-subjects d-none" : "" ?>">
               <?php $subject_type = "sorted"; include('./_subject_box.php'); ?>
             </div>
           <?php } ?>
+
+        </div>
+
+        <div class="row my-md-5">
+          <div class="col text-center">
+            <p><a onclick="showAllTopSubjects()">Show all 10</a></p>
+          </div>
         </div>
 
         <div class="row">
@@ -237,27 +245,8 @@
 
               <p>Another interesting observation is that successful people are probably not even aware of their own survivorship bias: they just feel it's all been hard work.</p>
 
-              <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">Wait, is luck really just 5%?</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="step-" class="vertical-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 offset-md-3">
-            <div class="text-center">
-              <p>This experiment is somewhat simplistic. There are a wide variety of factors we've simplified into "luck": health, family, country, environment...</p>
-
-              <p>So, does luck really account for only 5% of total success – or is it really more? Play yourself with the numbers – or move on to the next step.</p>
-
-              <input type="range" class="custom-range my-5" id="luck-selector" min="0" max="100" value="5" step="1">
-
-              <a href="#step-2" class="btn mb-3">Re-play with a <span class="luck-impact">0</span>% luck</a>
               <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">How would you compare to others?</a>
+
             </div>
           </div>
         </div>
@@ -270,13 +259,14 @@
 
           <div class="col-12 col-md-6 offset-md-3 text-center">
             <h2>You would have scored <span class="position-in-simulation">0</span>/<span class="number-of-people-in-simulation">0</span></h2>
+            <p>You would have been more successful than 50% of people</div>
           </div>
 
           <div class="col-12 col-md-6 offset-md-3 text-center">
 
             <div class="row">
               <?php foreach (range(0, 2) as $subject_id) { ?>
-                <div class="col">
+                <div class="col <?php echo $subject_id == 1 ? "self-subject-box" : "" ?>">
                   <?php $subject_type = "player-position"; include('./_subject_box.php') ?>
                 </div>
               <?php } ?>
@@ -356,6 +346,25 @@
 
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section id="step-" class="vertical-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 offset-md-3">
+            <div class="text-center">
+              <p>This experiment is somewhat simplistic. There are a wide variety of factors we've simplified into "luck": health, family, country, environment...</p>
+
+              <p>So, does luck really account for only 5% of total success – or is it really more? Play yourself with the numbers – or move on to the next step.</p>
+
+              <input type="range" class="custom-range my-5" id="luck-selector" min="0" max="100" value="5" step="1">
+
+              <a href="#step-2" class="btn btn-next mb-3">Re-play with a <span class="luck-impact">0</span>% luck</a>
+              <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="">How would you compare to others?</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
