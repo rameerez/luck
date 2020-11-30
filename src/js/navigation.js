@@ -9,6 +9,10 @@ var showAllSubjects = () => {
   $("#remaining-candidates").toggleClass("d-none");
 }
 
+var showAllTopSubjects = () => {
+  $(".remaining-top-subjects").toggleClass("d-none");
+}
+
 var revealPattern = () => {
   $("#hidden-pattern").toggleClass("d-none");
 }

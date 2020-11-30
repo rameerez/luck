@@ -22,7 +22,7 @@
         🍀 <span class="luck">Luck</span>
       </div>
       <div class="col text-right">
-        <span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-raw-luck"></span><span class="of-100">/100</span>
+        <span class="subject-box-figure" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-raw-luck"></span><span class="of-100">/100</span>
       </div>
     </div>
 
@@ -39,7 +39,7 @@
         🏋️ <span class="skill">Skill</span>
       </div>
       <div class="col text-right">
-        <span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-raw-effort"></span><span class="of-100">/100</span>
+        <span class="subject-box-figure" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-raw-effort"></span><span class="of-100">/100</span>
       </div>
     </div>
 
@@ -55,7 +55,7 @@
         🏆 <span class="total">Total</span>
       </div>
       <div class="col text-right">
-        <span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-result-total-score"></span><span class="of-100">/100</span>
+        <span class="subject-box-figure" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-result-total-score"></span><span class="of-100">/100</span>
       </div>
     </div>
     
