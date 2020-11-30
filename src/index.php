@@ -205,7 +205,7 @@
           </div>
 
           <div class="col">
-            <h3>Top 10 no luck</h3>
+            <h3>Top 10 "no luck"</h3>
             <ol>
               <?php foreach (range(0, 9) as $subject_id) { ?>
                 <li>
@@ -363,7 +363,7 @@
 
             </div>
 
-            <p class="mt-5"><b>Did you like this? Support my work 🎉</b></p>
+            <p class="mt-5 mb-3"><b>Did you like this? Support my work 🎉</b></p>
 
             <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="rameerez" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 
