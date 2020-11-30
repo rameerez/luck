@@ -154,6 +154,14 @@ body.dark .self-subject-box .subject-box {
   font-weight: bolder;
 }
 
+.subject-id-wrapper {
+  opacity: 0.6;
+}
+
+.subject-name {
+  font-weight: bolder;
+}
+
 /* @media screen and (min-width: 768px) {
   .subject-box {
     padding: 2em;

@@ -73,7 +73,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-8 offset-md-2 text-center">
-            <p>But you're not alone in the world, aren't you? These are <b><span class="number-of-people-in-simulation">0</span> more random people</b>, representing the rest of the population – and the people you have to compete with. They have been randomly generated, just like you.</p>
+            <p>But you're not alone in the world, aren't you? These are <b><span class="number-of-people-in-simulation">0</span> more random people</b>, representing the rest of the population – the people you have to compete with. They have been randomly generated, just like you.</p>
           </div>
         </div>
 
@@ -377,8 +377,10 @@
     <?php include('_made_by.php') ?>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/locales/en_US/faker.en_US.min.js" crossorigin="anonymous"></script>
     <script src="./assets/clipboard.min.js"></script>
     <script src="./js/navigation.js"></script>
     <script src="./js/index.js"></script>
+
   </body>
 </html>
