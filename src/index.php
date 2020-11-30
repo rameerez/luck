@@ -289,7 +289,7 @@
 
           <div class="col-12 col-md-6 offset-md-3 text-center">
             <h2>You would have scored <span class="position-in-simulation">0</span>/<span class="number-of-people-in-simulation">0</span></h2>
-            <p>50% of people would have been more successful than you</div>
+            <p>You would have been more successful than <span class="percentile-below">0</span>% of all people</div>
           </div>
 
           <div class="col-12 col-md-6 offset-md-3 text-center">
@@ -334,15 +334,11 @@
           </div>
 
           <div class="col-12 col-md-6 offset-md-3 text-center mt-3">
-          
-
-            <p><b>Did you like this? Support my work 🎉</b></p>
-
-            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="rameerez" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 
             <p class="mt-5"><b>Check out the other products I make ✨</b></p>
 
-            <div class="row mt-4 mb-5 mb-md-3">
+            <div class="row mt-4 mb-5 my-md-3">
+              
               <div class="col-12 col-md-6">
 
                 <a class="product-snippet" href="https://gohustl.co/?ref=rameerez&utm_source=rameerez.com&utm_medium=referral&utm_campaign=success-hard-work-vs-luck">
@@ -364,7 +360,12 @@
                   </div>
                 </a>
               </div>
+
             </div>
+
+            <p class="mt-5"><b>Did you like this? Support my work 🎉</b></p>
+
+            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="rameerez" data-color="#FF5F5F" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 
             <!-- <input type="email" placeholder="newsletter" /> -->
           </div>
