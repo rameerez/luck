@@ -182,17 +182,43 @@
       <div class="container">
 
         <div class="row">
+
           <div class="col-12 col-md-6 offset-md-3 text-center">
             <h2>The top 10 performers <br/>if luck was not considered</h2>
             <p>Imagine a world where luck was not even a concept and success was entirely determined by hard work alone. These would be the top 10 performers if luck was not considered.</p>
           </div>
         </div>
+
         <div class="row">
-          <?php foreach (range(0, 9) as $subject_id) { ?>
-            <div class="col-6 col-md my-0 my-md-5 tiny-subject-box">
-              <?php $subject_type = "noluck"; include('./_subject_box.php') ?>
-            </div>
-          <?php } ?>
+
+          <div class="col text-right" style="opacity: 0.3;">
+            <h3>Original top 10</h3>
+            <ol>
+              <?php foreach (range(0, 9) as $subject_id) { ?>
+                <li>
+                  <?php $subject_type = "sorted-2"; ?>
+                  <span class="subject-name" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name"></span>
+                  <span style="opacity: 0.2">(<span class="subject"></span>#<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>)</span>
+                </li>
+              <?php } ?>
+            </ol>
+          </div>
+
+          <div class="col">
+            <h3>Top 10 no luck</h3>
+            <ol>
+              <?php foreach (range(0, 9) as $subject_id) { ?>
+                <li>
+                  <?php $subject_type = "noluck"; #include('./_subject_box.php') ?>
+                  <span class="subject-name" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name"></span>
+                  <span style="opacity: 0.2">(<span class="subject"></span>#<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>)</span>
+                </li>
+                <!-- <div class="col-6 col-md my-0 my-md-5 tiny-subject-box">
+                </div> -->
+              <?php } ?>
+            </ol>
+          </div>
+
         </div>
 
         <div class="row">

@@ -13,7 +13,8 @@
           <span class="subject">subject</span> #<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>
         </span>
         <br />
-        <span class="subject-name" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name"></span></div>
+        <span class="subject-name" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name"></span>
+      </div>
     </div>
   </div>
 
