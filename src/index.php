@@ -141,7 +141,7 @@
         <div class="row my-md-5">
 
           <?php foreach (range(0, 9) as $subject_id) { ?>
-            <div class="col-6 col-md-2 my-0 tiny-subject-box first-top-6 <?php echo $subject_id >= 6 ? "remaining-top-subjects d-none" : "" ?>">
+            <div class="col-6 col-md-2 my-0 first-top-6 <?php echo $subject_id >= 6 ? "remaining-top-subjects d-none" : "" ?>">
               <?php $subject_type = "sorted"; include('./_subject_box.php'); ?>
             </div>
           <?php } ?>
@@ -169,7 +169,7 @@
           <div class="col-12 col-md-6 offset-md-3 text-center">
             <div class="text-center">
               <p>Top candidates have a <b>📈 very consistent good deal of luck</b>, even though luck only accounts for <span class="luck-impact">0</span>% of the overall success.</p>
-              <p>Another interesting point is that <b>no one reaches the top by luck alone</b>: working hard is just a pre-requisite. Luck just stacks on top of hard work.</p>
+              <p>🙅‍♂️ <b>No one reaches the top by luck alone</b>: working hard is just a pre-requisite. Luck just stacks on top of hard work.</p>
               <p>Is this fair? What if we removed luck?</p>
               <a href="#step-" type="button" class="btn-next btn btn-primary" onclick="onRemoveLuck()">Discover what happens if we remove luck</a>
             </div>
