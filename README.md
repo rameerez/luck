@@ -26,7 +26,7 @@ All DOM elements are generated with PHP.
 
 Then content and functionality is generated and added via jQuery.
 
-You can just `cd` into `src` 
+You can just `cd` into `src` and serve `index.php`.
 
 
 ## TO-DO
