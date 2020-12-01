@@ -5,6 +5,10 @@
 
 <div class="subject-box">
 
+  <div class="position-badge">
+    <span><?php echo $subject_type != "sorted" ? "" : ($subject_id == 0 ? "🥇" : ($subject_id == 1 ? "🥈" : ($subject_id == 2 ? "🥉" : ""))) ?></span>
+  </div>
+
   <div class="row mb-4">
     <div class="col text-right subject-info">
       <span style="font-size: 14px;" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-emoji">🧑</span>

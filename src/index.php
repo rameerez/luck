@@ -189,14 +189,15 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row my-4">
 
           <div class="col text-right" style="opacity: 0.3;">
             <h3>Original top 10</h3>
-            <ol>
+            <ol class="subject-list">
               <?php foreach (range(0, 9) as $subject_id) { ?>
                 <li>
                   <?php $subject_type = "sorted-2"; ?>
+                  <?php echo $subject_id == 0 ? '🥇' : ($subject_id == 1 ? '🥈' : ($subject_id == 2 ? '🥉' : $subject_id+1 . '.' )) ?>&nbsp;
                   <span class="subject-name" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name"></span>
                   <span style="opacity: 0.2">(<span class="subject"></span>#<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>)</span>
                 </li>
@@ -206,10 +207,11 @@
 
           <div class="col">
             <h3>Top 10 "no luck"</h3>
-            <ol>
+            <ol class="subject-list">
               <?php foreach (range(0, 9) as $subject_id) { ?>
                 <li>
                   <?php $subject_type = "noluck"; #include('./_subject_box.php') ?>
+                  <?php echo $subject_id == 0 ? '🥇' : ($subject_id == 1 ? '🥈' : ($subject_id == 2 ? '🥉' : $subject_id+1 . '.' )) ?>&nbsp;
                   <span class="subject-name" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name"></span>
                   <span style="opacity: 0.2">(<span class="subject"></span>#<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>)</span>
                 </li>
