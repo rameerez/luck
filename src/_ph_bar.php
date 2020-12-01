@@ -21,7 +21,7 @@
   <div class="row">
     <div class="col text-center">
       <span id="product-hunt-text">We’re live on Product Hunt! 😻 <a
-          href="https://www.producthunt.com/posts/hustl-2">Come check us out!</a> 🚀</span>
+          href="https://www.producthunt.com/posts/success-effort-or-luck">Come check us out!</a> 🚀</span>
     </div>
   </div>
 </div>
