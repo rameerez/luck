@@ -7,6 +7,9 @@
   
   <body class="dark">
 
+    <?php include('./_ph_bar.php') ?>
+
+
     <div id="dark-mode-toggle">
       <?php include('./_dark_mode_toggle.php') ?>
     </div>

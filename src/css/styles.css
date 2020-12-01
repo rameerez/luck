@@ -14,6 +14,7 @@ body {
   color: var(--main-dark-color);
   background-color: var(--main-light-color);
   font-size: 18px;
+  overflow-x: hidden;
   /* color: #fff; */
   /* background-color: #0579ce; */
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.01) 2px, transparent 2px),
