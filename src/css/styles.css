@@ -158,6 +158,15 @@ h3 {
   border-radius: 12px;
   box-shadow: 0px 0px 10px #d9d9d9;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.subject-box .position-badge {
+  position: absolute;
+  top: -11px;
+  left: -10px;
+  font-size: 36px;
+  transform: rotate(15deg);
 }
 
 .self-subject-box .subject-box,
@@ -211,6 +220,10 @@ body.dark .self-subject-box .subject-box {
 .key-metric .big-figure {
   font-size: 32px;
   font-weight: bold;
+}
+
+.subject-list {
+  list-style: none;
 }
 
 .share-button {
