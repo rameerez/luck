@@ -122,6 +122,12 @@ h3 {
   font-size: 18px;
 }
 
+.btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .btn.btn-primary {
   border: 2px solid rgba(0, 0, 0, 0.9);
   color: rgba(0, 0, 0, 0.9);
@@ -129,9 +135,6 @@ h3 {
   border-radius: 18px;
   transition: all 0.4s;
   padding: 0.7em 3.5em;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .btn.btn-primary:hover {
