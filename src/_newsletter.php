@@ -20,7 +20,7 @@
 	<input type="email" style="width: 100%;" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fad0df1c924a5fdf8f3f3ea5c_3374af657f" tabindex="-1" value=""></div>
-    <div class="btn"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="btn" style="appearance: none;"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 100%; appearance: none;"></div>
     </div>
 </form>
 </div>
