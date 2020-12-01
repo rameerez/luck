@@ -351,7 +351,7 @@
                   <div class="product-logo" style='background-image: url("https://gohustl.co/images/apple-touch-icon.png"); background-size: cover;'></div>
                   <div class="text-left">
                     <span class="product-name">Hustl</span>
-                    <span class="product-description">Create screen time-lapses</span>
+                    <div class="product-description">Create screen time-lapses</div>
                   </div>
                 </a>
 
@@ -362,7 +362,7 @@
                   <div class="product-logo" style='background-image: url("https://goedit.me/images/apple-touch-icon.png"); background-size: cover;'></div>
                   <div class="text-left">
                     <span class="product-name">Edit</span>
-                    <span class="product-description">Edit any website without code</span>
+                    <div class="product-description">Edit any website without code</div>
                   </div>
                 </a>
               </div>
