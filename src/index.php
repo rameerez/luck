@@ -199,7 +199,7 @@
                   <?php $subject_type = "sorted-2"; ?>
                   <?php echo $subject_id == 0 ? '🥇' : ($subject_id == 1 ? '🥈' : ($subject_id == 2 ? '🥉' : $subject_id+1 . '.' )) ?>&nbsp;
                   <span class="subject-name" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name"></span>
-                  <span style="opacity: 0.2">(<span class="subject"></span>#<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>)</span>
+                  <span class="d-none" style="opacity: 0.2">(<span class="subject"></span>#<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>)</span>
                 </li>
               <?php } ?>
             </ol>
@@ -213,7 +213,7 @@
                   <?php $subject_type = "noluck"; #include('./_subject_box.php') ?>
                   <?php echo $subject_id == 0 ? '🥇' : ($subject_id == 1 ? '🥈' : ($subject_id == 2 ? '🥉' : $subject_id+1 . '.' )) ?>&nbsp;
                   <span class="subject-name" id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-name"></span>
-                  <span style="opacity: 0.2">(<span class="subject"></span>#<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>)</span>
+                  <span class="d-none" style="opacity: 0.2">(<span class="subject"></span>#<span id="subject-<?php echo $subject_type ?>-<?php echo $subject_id ?>-id">0</span>)</span>
                 </li>
                 <!-- <div class="col-6 col-md my-0 my-md-5 tiny-subject-box">
                 </div> -->
