@@ -82,7 +82,7 @@ var sortAndUpdateSubjects = () => {
 var calculateAndShowCurrentPlayerPosition = () => {
   var playerIndexInSimulation = sortedSubjects.map(e => e.id).indexOf(0);
   $(".position-in-simulation").text(playerIndexInSimulation)
-  $(".percentile-below").text(100 - playerIndexInSimulation/10)
+  $(".percentile-below").text(100 - Math.round(playerIndexInSimulation/10))
   var playerSandwich = [
     sortedSubjects[playerIndexInSimulation-1],
     sortedSubjects[playerIndexInSimulation],
