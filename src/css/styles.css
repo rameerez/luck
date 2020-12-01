@@ -13,6 +13,7 @@ body {
   font-family: "Patrick Hand", Arial, Helvetica, sans-serif;
   color: var(--main-dark-color);
   background-color: var(--main-light-color);
+  font-size: 18px;
   /* color: #fff; */
   /* background-color: #0579ce; */
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.01) 2px, transparent 2px),
