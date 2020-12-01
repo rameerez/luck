@@ -296,7 +296,7 @@
 
             <div class="row">
               <?php foreach (range(0, 2) as $subject_id) { ?>
-                <div class="col <?php echo $subject_id == 1 ? "self-subject-box" : "" ?>">
+                <div class="col-sm-12 col-md <?php echo $subject_id == 1 ? "self-subject-box" : "" ?> <?php echo $subject_id != 1 ? "d-none d-md-block" : "" ?>">
                   <?php $subject_type = "player-position"; include('./_subject_box.php') ?>
                 </div>
               <?php } ?>
