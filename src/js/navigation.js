@@ -7,14 +7,17 @@ var toggleRandomSelf = () => {
 
 var showAllSubjects = () => {
   $("#remaining-candidates").toggleClass("d-none");
+  ga('send', 'event', 'LuckSuccessExperiment', 'click', "showAllSubjects");
 }
 
 var showAllTopSubjects = () => {
   $(".remaining-top-subjects").toggleClass("d-none");
+  ga('send', 'event', 'LuckSuccessExperiment', 'click', "showAllTopSubjects");
 }
 
 var revealPattern = () => {
   $("#hidden-pattern").toggleClass("d-none");
+  ga('send', 'event', 'LuckSuccessExperiment', 'click', "revealPattern");
 }
 
 
@@ -35,7 +38,9 @@ $(".btn-next").on("click", e => {
   e.preventDefault;
   if ($(e.target).parents('section').length > 0) {
     $(e.target).parents('section').toggleClass("d-none")
-    $($(e.target).attr("href")).toggleClass("d-none")
+    var step_id = $(e.target).attr("href")
+    $(step_id).toggleClass("d-none")
+    ga('send', 'event', 'LuckSuccessExperiment', 'navigate', step_id);
   }
 })
 
@@ -44,6 +49,7 @@ var chk = document.getElementById('chk');
 chk.addEventListener('change', () => {
   document.body.classList.toggle('dark');
   $(".footer-signature").toggleClass("d-none")
+  ga('send', 'event', 'LuckSuccessExperiment', 'click', "toggleDarkMode");
 });
 
 
@@ -53,6 +59,8 @@ function copy_sleep(ms) {
 }
 
 function copyIt(param) {
+  ga('send', 'event', 'LuckSuccessExperiment', 'click', "copyShareLink");
+
   var copy_data = param.getAttribute('data-copy');
   var clipboard = new Clipboard('.copy-share-link', {
         text: function() {
