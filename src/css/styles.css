@@ -37,6 +37,10 @@ body.dark {
   color: var(--main-light-color);
 }
 
+body.dark a {
+  color: var(--main-light-color);
+}
+
 body.dark .btn.btn-primary {
   border-color: var(--main-light-color);
   color: rgba(255, 255, 255, 0.9);
@@ -78,6 +82,10 @@ body.dark .share-button {
 .vertical-center {
   display: flex;
   align-items: center;
+}
+
+a {
+  color: var(--main-dark-color);
 }
 
 a:not([href]) {
