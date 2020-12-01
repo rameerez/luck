@@ -1,13 +1,13 @@
 <meta name="description"
-  content="Is success the result or hard work, skill and dedication – or is it just luck? Play and find out.">
-<meta name="keywords" content="success,hard work,luck,game,play,dedication,skill,hard work vs luck">
+  content="You could work as hard as you wanted and still not be successful. It’s not an opinion — it’s math. Play and discover how successful people reach the top.">
+<meta name="keywords" content="success,hard work,luck,game,play,dedication,skill,hard work vs luck,top">
 
 <!-- Open Graph data -->
 
 <meta property="og:url" content="https://rameerez.com/success-hard-work-vs-luck/">
-<meta property="og:title" content="Success: is it really hard work or just luck? | Rameerez">
+<meta property="og:title" content="Success: effort or luck? How succesful people reach the top | Rameerez">
 <meta property="og:description"
-  content="Is success the result or hard work, skill and dedication – or is it just luck? Play and find out.">
+  content="You could work as hard as you wanted and still not be successful. It’s not an opinion — it’s math. Play and discover how successful people reach the top.">
 
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://rameerez.com/success-hard-work-vs-luck/images/hard-work-vs-skill-og-image.jpg">
@@ -19,9 +19,9 @@
 <!-- Twitter card -->
 <meta name="twitter:card" content="summary_large_image">
 <!-- <meta name="twitter:site" content="@wakefy_app"> -->
-<meta name="twitter:title" content="Success: is it really hard work or just luck? | Rameerez">
+<meta name="twitter:title" content="Success: effort or luck? How succesful people reach the top | Rameerez">
 <meta name="twitter:description"
-  content="Is success the result or hard work, skill and dedication – or is it just luck? Play and find out.">
+  content="You could work as hard as you wanted and still not be successful. It’s not an opinion — it’s math. Play and discover how successful people reach the top.">
 <meta name="twitter:image" content="https://rameerez.com/success-hard-work-vs-luck/images/hard-work-vs-skill-og-image.jpg">
 
 <!-- Favicons -->

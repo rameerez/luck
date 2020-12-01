@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Success: is it really hard work or just luck? | Rameerez</title>
+    <title>Success: effort or luck? How succesful people reach the top | Rameerez</title>
     <?php include('./_head_imports.php') ?>
     <?php include('./_metadata.php') ?>
   </head>
