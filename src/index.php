@@ -326,7 +326,7 @@
               </div>
               <div class="col text-center text-md-left">
                 <a class="share-button"
-                  onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" href="https://twitter.com/intent/tweet?text=I just learned success has more to do with luck than hard work 🤔 %0a%0aCheck it out yourself here — https://rameerez.com/success-hard-work-vs-luck via @rameerez">
+                  onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); ga('send', 'event', 'LuckSuccessExperiment', 'share', 'tweetThis'); return false;" href="https://twitter.com/intent/tweet?text=I just learned success has more to do with luck than hard work 🤔 %0a%0aCheck it out yourself here — https://rameerez.com/success-hard-work-vs-luck via @rameerez">
                   🐦 Tweet this
                 </a>
               </div>

@@ -59,7 +59,7 @@ function copy_sleep(ms) {
 }
 
 function copyIt(param) {
-  ga('send', 'event', 'LuckSuccessExperiment', 'click', "copyShareLink");
+  ga('send', 'event', 'LuckSuccessExperiment', 'share', "copyShareLink");
 
   var copy_data = param.getAttribute('data-copy');
   var clipboard = new Clipboard('.copy-share-link', {
