@@ -370,11 +370,12 @@
             <!-- <input type="email" placeholder="newsletter" /> -->
           </div>
 
-          <div class="col-12 col-md-6 offset-md-3 text-center my-0 my-md-5">
-  
+          <div class="col-12 col-md-6 offset-md-3 text-center my-5 my-md-5">
+            <?php include('_newsletter.php') ?>
+          </div>
 
+          <div class="col-12 col-md-6 offset-md-3 text-center my-3 my-md-5">
             <?php include('_footer_signature.php') ?>
-
           </div>
 
         </div>
