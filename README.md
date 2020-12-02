@@ -8,6 +8,8 @@ It's a guided web experience that shows that if you randomly generate "luck" and
 
 This is not intended to prove anything – but rather to reflect about the idea of luck and maybe help spark a few interesting conversations with friends.
 
+The whole story behind this project 👉 https://twitter.com/rameerez/status/1334104302361702400
+
 !["The top 3 performers among 1.000 randomly generated subjects tend to share a significantly high luck score"](https://github.com/rameerez/luck/blob/main/src/images/top-3.jpg?raw=true)
 
 ## Technologies used
