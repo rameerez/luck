@@ -1,10 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 0; padding: 0; margin: 0; width: 10px;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
   <a class="navbar-brand" href="https://rameerez.com">
     <img src="https://rameerez.com/wp-content/themes/rameerez-yuuta/assets/images/rameerez-startup-studio-logo-border-white.svg" height="30" />
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -15,5 +16,9 @@
         <a class="nav-link" href="https://rameerez.com/about">About</a>
       </li>
     </ul>
+  </div>
+
+  <div class="d-md-none" style="opacity: 0;">
+    &nbsp;
   </div>
 </nav>
