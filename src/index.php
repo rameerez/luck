@@ -9,6 +9,8 @@
 
     <?php include('./_ph_bar.php') ?>
 
+    <?php include('./_navbar.php') ?>
+
 
     <div id="dark-mode-toggle">
       <?php include('./_dark_mode_toggle.php') ?>
@@ -417,6 +419,7 @@
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/locales/en_US/faker.en_US.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./assets/clipboard.min.js"></script>
     <script src="./js/navigation.js"></script>
     <script src="./js/index.js"></script>
