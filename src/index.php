@@ -48,8 +48,13 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 offset-md-3">
             <div class="text-center">
-              <p>Let's take one random person as an example. <b>This will be you</b>.</p>
-              <p>You will be represented by a random <b>🏋️ hard work score</b> (skill) and a random <b>🍀 luck score</b>. Your <b>🏆 total success</b> will be calculated as <span id="effort-impact"></span>% hard work and <span class="luck-impact">0</span>% luck.</p>
+              <div id="toggle-random-self-explanation" class="d-none" style="cursor: pointer;" onclick="toggleRandomSelfExplanation();">
+                <i class="far fa-question-circle"></i>
+              </div>
+              <div id="random-self-explanation">
+                <p>Let's take one random person as an example. <b>This will be you</b>.</p>
+                <p>You will be represented by a random <b>🏋️ hard work score</b> (skill) and a random <b>🍀 luck score</b>. Your <b>🏆 total success</b> will be calculated as <span id="effort-impact"></span>% hard work and <span class="luck-impact">0</span>% luck.</p>
+              </div>
               <a type="button" id="toggle-random-self-btn" class="btn btn-primary" onclick="generateRandomSelf(); toggleRandomSelf();">Generate your random self</a>
             </div>
           </div>

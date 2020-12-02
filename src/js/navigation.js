@@ -1,8 +1,14 @@
 var step = 0;
 
 var toggleRandomSelf = () => {
+  toggleRandomSelfExplanation();
   $("#toggle-random-self-btn").toggleClass("d-none");
   $("#random-self-row").toggleClass("d-none");
+}
+
+var toggleRandomSelfExplanation = () => {
+  $("#toggle-random-self-explanation").toggleClass("d-none");
+  $("#random-self-explanation").toggleClass("d-none");
 }
 
 var showAllSubjects = () => {
