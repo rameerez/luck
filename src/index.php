@@ -24,7 +24,12 @@
               <h1><span class="success">Success</span><div class="success-subtitle">is it really hard work – or just luck?</div></h1>
               <a href="#step-" type="button" class="btn-next btn btn-primary mt-3" onclick="">🍀 Play</a>
               </div>
-              <div class="mt-2 text-center" style="font-size: 12px; opacity: 0.3;"><a href="https://github.com/rameerez/luck">Fork me on <i class="fab fa-github"></i> GitHub</a></div>
+              <div class="mt-2 text-center" style="font-size: 12px; opacity: 0.3;">
+                <a href="https://github.com/rameerez/luck">Fork me on <i class="fab fa-github"></i> GitHub</a>
+              </div>
+              <div class="mt-2 text-center" style="font-size: 12px; opacity: 0.8;">
+                <a href="http://buymeacoffee.com/rameerez">☕️ Buy me a coffee</a>
+              </div>
             </div>
           </div>
         </div>

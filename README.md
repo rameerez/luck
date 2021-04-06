@@ -1,5 +1,9 @@
 !["Success: is it really hard work – or just luck?"](https://github.com/rameerez/luck/blob/main/src/images/success-title.jpg?raw=true)
 
+<div style="text-align: center; margin-bottom: 1em;">
+<a href="https://www.buymeacoffee.com/rameerez" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+</div>
+
 # Live webapp: [🔗 rameerez.com/luck](https://rameerez.com/luck)
 
 This is a web experiment aimed to explore the idea of randomness in life, especially in regards to success.
