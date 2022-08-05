@@ -3,9 +3,9 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <a class="navbar-brand" href="https://rameerez.com">
-    <img src="https://rameerez.com/wp-content/themes/rameerez-yuuta/assets/images/rameerez-startup-studio-logo-border-white.svg" height="30" />
-  </a>
+  <!-- <a class="navbar-brand" href="https://rameerez.com">
+    <img src="https://rameerez.com/signature/avatar.webp" height="30" style="border-radius: 100%;" />
+  </a> -->
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
