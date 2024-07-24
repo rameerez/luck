@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/dark-mode-toggle.css">
 
+<script defer src="https://a.rameerez.com/script.js" data-website-id="2a6b7027-b206-4073-8b11-c322dda38965"></script>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
